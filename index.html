@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Aprende a Leer - Aprende el Alfabeto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Pantalla de inicio -->
+        <div id="home-screen" class="screen active">
+            <div class="header">
+                <h1 class="app-title">🎯 ABC Aprende a Leer</h1>
+                <div class="stars-display">
+                    <span class="star-icon">⭐</span>
+                    <span id="total-stars">0</span>
+                </div>
+            </div>
+            
+            <div class="level-selector">
+                <h2>Elige tu nivel</h2>
+                <div class="levels">
+                    <button class="level-btn active" data-level="1">
+                        <span class="level-number">1</span>
+                        <span class="level-name">Escucha y Repite</span>
+                        <span class="level-desc">Vocales</span>
+                    </button>
+                    <button class="level-btn" data-level="2">
+                        <span class="level-number">2</span>
+                        <span class="level-name">Reconoce y Traza</span>
+                        <span class="level-desc">Consonantes</span>
+                    </button>
+                    <button class="level-btn locked" data-level="3">
+                        <span class="level-number">3</span>
+                        <span class="level-name">Forma Palabras</span>
+                        <span class="level-desc">Sílabas</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="main-menu">
+                <button id="start-learning" class="main-btn">
+                    🎮 ¡Empezar a Jugar!
+                </button>
+                <button id="parent-panel" class="secondary-btn">
+                    👨‍👩‍👧‍👦 Panel de Padres
+                </button>
+            </div>
+        </div>
+
+        <!-- Pantalla de selección de letras -->
+        <div id="letter-selection" class="screen">
+            <div class="header">
+                <button id="back-home" class="back-btn">← Inicio</button>
+                <h2>Elige una letra</h2>
+                <div class="stars-display">
+                    <span class="star-icon">⭐</span>
+                    <span id="current-stars">0</span>
+                </div>
+            </div>
+            
+            <div id="letters-grid" class="letters-grid">
+                <!-- Las letras se generarán dinámicamente -->
+            </div>
+        </div>
+
+        <!-- Pantalla de actividad de letra -->
+        <div id="letter-activity" class="screen">
+            <div class="header">
+                <button id="back-letters" class="back-btn">← Letras</button>
+                <div class="letter-progress">
+                    <span id="current-letter-display">A</span>
+                    <div class="progress-stars">
+                        <span class="progress-star">☆</span>
+                        <span class="progress-star">☆</span>
+                        <span class="progress-star">☆</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-content">
+                <!-- Animación de letra -->
+                <div id="letter-animation" class="letter-animation">
+                    <div id="animated-letter" class="animated-letter">A</div>
+                    <div id="letter-word" class="letter-word">AVIÓN</div>
+                </div>
+
+                <!-- Controles de audio -->
+                <div class="audio-controls">
+                    <button id="play-letter" class="audio-btn">
+                        🔊 Escuchar Letra
+                    </button>
+                    <button id="play-word" class="audio-btn">
+                        🎵 Escuchar Palabra
+                    </button>
+                    <button id="play-slow" class="audio-btn">
+                        🐌 Más Lento
+                    </button>
+                </div>
+
+                <!-- Área de actividades -->
+                <div class="activities">
+                    <button id="trace-activity" class="activity-btn">
+                        ✏️ Trazar Letra
+                    </button>
+                    <button id="voice-activity" class="activity-btn">
+                        🎤 Repetir Palabra
+                    </button>
+                    <button id="minigame-activity" class="activity-btn">
+                        🎮 Mini-Juego
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla de trazado -->
+        <div id="trace-screen" class="screen">
+            <div class="header">
+                <button id="back-activity" class="back-btn">← Actividad</button>
+                <h2>Traza la letra <span id="trace-letter">A</span></h2>
+            </div>
+            
+            <div class="trace-content">
+                <canvas id="trace-canvas" width="400" height="400"></canvas>
+                <div class="trace-controls">
+                    <button id="clear-trace" class="control-btn">🗑️ Borrar</button>
+                    <button id="show-guide" class="control-btn">👻 Guía</button>
+                    <button id="check-trace" class="control-btn">✅ Revisar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla de reconocimiento de voz -->
+        <div id="voice-screen" class="screen">
+            <div class="header">
+                <button id="back-voice" class="back-btn">← Actividad</button>
+                <h2>Di la palabra: <span id="voice-word">AVIÓN</span></h2>
+            </div>
+            
+            <div class="voice-content">
+                <div id="voice-animation" class="voice-animation">
+                    <div class="microphone">🎤</div>
+                    <div class="sound-waves">
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                    </div>
+                </div>
+                
+                <div class="voice-controls">
+                    <button id="start-recording" class="voice-btn">
+                        🎤 Empezar a Hablar
+                    </button>
+                    <button id="play-example" class="voice-btn">
+                        🔊 Escuchar Ejemplo
+                    </button>
+                </div>
+                
+                <div id="voice-feedback" class="voice-feedback">
+                    <!-- Feedback aparecerá aquí -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Pantalla de mini-juego -->
+        <div id="minigame-screen" class="screen">
+            <div class="header">
+                <button id="back-minigame" class="back-btn">← Actividad</button>
+                <h2 id="minigame-title">Encuentra la letra A</h2>
+            </div>
+            
+            <div id="minigame-content" class="minigame-content">
+                <!-- El contenido del mini-juego se generará dinámicamente -->
+            </div>
+        </div>
+
+        <!-- Panel de padres -->
+        <div id="parent-screen" class="screen">
+            <div class="header">
+                <button id="back-parent" class="back-btn">← Inicio</button>
+                <h2>Panel de Padres</h2>
+            </div>
+            
+            <div class="parent-content">
+                <div class="stats-section">
+                    <h3>Progreso General</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" id="letters-mastered">0</div>
+                            <div class="stat-label">Letras Dominadas</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="total-time">0</div>
+                            <div class="stat-label">Minutos Jugados</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="accuracy-rate">0%</div>
+                            <div class="stat-label">Precisión</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="progress-section">
+                    <h3>Progreso por Letra</h3>
+                    <div id="letter-progress-grid" class="letter-progress-grid">
+                        <!-- Se generará dinámicamente -->
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h3>Configuración</h3>
+                    <div class="settings-controls">
+                        <button id="reset-progress" class="danger-btn">🔄 Reiniciar Progreso</button>
+                        <button id="export-progress" class="secondary-btn">📊 Exportar Datos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay de celebración -->
+        <div id="celebration-overlay" class="overlay">
+            <div class="celebration-content">
+                <div class="confetti"></div>
+                <h2 id="celebration-message">¡Muy bien!</h2>
+                <div class="earned-stars">
+                    <span class="big-star">⭐</span>
+                    <span class="big-star">⭐</span>
+                    <span class="big-star">⭐</span>
+                </div>
+                <button id="continue-celebration" class="main-btn">¡Continuar!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

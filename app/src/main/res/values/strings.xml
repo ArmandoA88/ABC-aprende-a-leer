@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">ABC Aprende a Leer</string>
+    <string name="app_description">Aplicación educativa para aprender el alfabeto español</string>
+    
+    <!-- Pantalla principal -->
+    <string name="choose_level">Elige tu nivel</string>
+    <string name="start_playing">¡Empezar a Jugar!</string>
+    <string name="parent_panel">Panel de Padres</string>
+    
+    <!-- Niveles -->
+    <string name="level_1_title">Escucha y Repite</string>
+    <string name="level_1_desc">Vocales</string>
+    <string name="level_2_title">Reconoce y Traza</string>
+    <string name="level_2_desc">Consonantes</string>
+    <string name="level_3_title">Forma Palabras</string>
+    <string name="level_3_desc">Sílabas</string>
+    
+    <!-- Actividades -->
+    <string name="listen_letter">Escuchar Letra</string>
+    <string name="listen_word">Escuchar Palabra</string>
+    <string name="listen_slow">Más Lento</string>
+    <string name="trace_letter">Trazar Letra</string>
+    <string name="repeat_word">Repetir Palabra</string>
+    <string name="play_minigame">Mini-Juego</string>
+    
+    <!-- Trazado -->
+    <string name="trace_title">Traza la letra %1$s</string>
+    <string name="clear_trace">Borrar</string>
+    <string name="show_guide">Guía</string>
+    <string name="check_trace">Revisar</string>
+    
+    <!-- Voz -->
+    <string name="voice_title">Di la palabra: %1$s</string>
+    <string name="start_recording">Empezar a Hablar</string>
+    <string name="play_example">Escuchar Ejemplo</string>
+    <string name="listening">Escuchando...</string>
+    
+    <!-- Mini-juegos -->
+    <string name="minigame_title">Mini-juego: %1$s</string>
+    <string name="find_letter">Encuentra todas las "%1$s"</string>
+    <string name="memory_game">Memorama</string>
+    <string name="matching_game">Conecta la letra con su palabra</string>
+    
+    <!-- Panel de padres -->
+    <string name="general_progress">Progreso General</string>
+    <string name="letters_mastered">Letras Dominadas</string>
+    <string name="minutes_played">Minutos Jugados</string>
+    <string name="accuracy_rate">Precisión</string>
+    <string name="progress_by_letter">Progreso por Letra</string>
+    <string name="settings">Configuración</string>
+    <string name="reset_progress">Reiniciar Progreso</string>
+    <string name="export_progress">Exportar Datos</string>
+    
+    <!-- Mensajes de celebración -->
+    <string name="excellent_work">¡Excelente trabajo!</string>
+    <string name="very_good">¡Muy bien!</string>
+    <string name="good_try">¡Buen intento!</string>
+    <string name="keep_practicing">¡Sigue practicando!</string>
+    <string name="perfect">¡Perfecto!</string>
+    <string name="try_again">Inténtalo de nuevo</string>
+    
+    <!-- Navegación -->
+    <string name="back">Atrás</string>
+    <string name="continue_btn">Continuar</string>
+    <string name="home">Inicio</string>
+    <string name="letters">Letras</string>
+    
+    <!-- Permisos -->
+    <string name="microphone_permission_title">Permiso de Micrófono</string>
+    <string name="microphone_permission_message">Esta aplicación necesita acceso al micrófono para las actividades de pronunciación.</string>
+    <string name="grant_permission">Conceder Permiso</string>
+    <string name="permission_denied">Permiso denegado</string>
+    
+    <!-- Errores -->
+    <string name="error_tts_not_available">Text-to-Speech no disponible</string>
+    <string name="error_voice_not_available">Reconocimiento de voz no disponible</string>
+    <string name="error_loading_data">Error al cargar datos</string>
+    <string name="error_saving_progress">Error al guardar progreso</string>
+    
+    <!-- Confirmaciones -->
+    <string name="confirm_reset_title">Reiniciar Progreso</string>
+    <string name="confirm_reset_message">¿Estás seguro de que quieres reiniciar todo el progreso? Esta acción no se puede deshacer.</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancelar</string>
+</resources>
