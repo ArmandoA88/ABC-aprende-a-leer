@@ -50,9 +50,22 @@ class MainViewModel @Inject constructor(
                 // Inicializar datos de la base de datos
                 progressRepository.initializeData()
                 
-                // Inicializar servicios
-                ttsService.initialize()
-                voiceService.initialize()
+                // Inicializar servicios de forma asíncrona y no bloqueante
+                launch {
+                    try {
+                        ttsService.initialize()
+                    } catch (e: Exception) {
+                        // TTS no crítico para la funcionalidad básica
+                    }
+                }
+                
+                launch {
+                    try {
+                        voiceService.initialize()
+                    } catch (e: Exception) {
+                        // Voice recognition no crítico para la funcionalidad básica
+                    }
+                }
                 
                 _appState.value = _appState.value.copy(isLoading = false)
             } catch (e: Exception) {

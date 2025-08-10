@@ -4,41 +4,77 @@ ADDED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\Android
 INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:2:1-46:12
 INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:2:1-46:12
 INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:2:1-46:12
-MERGED from [com.google.android.material:material:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c29480f4beed49c5318a0cab14389771\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f43a27f9f138f8904f887e108a974a9d\transformed\constraintlayout-2.1.0\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\699589b4f17e813058f21c67c73755d5\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b8ff39f1dcdc9a76ca0ccbdc510042f\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c6071a5c8333a28856347225e47965f9\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.2.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\5c25b17aec8f3f36129f228b01ad855e\transformed\activity-1.2.4\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fdd7d537c90d9cb78523ed866090e8f7\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\d5bcc472fc8199ccbbf9c6355ad7b75d\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\6053aa5ac3b6a0d514fd0c0a52d2c07f\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3b17d217efaec8de54717777c656f4f4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\9294a5039400922b4f35055d7049c64a\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c4daeb91068207233d4877fd7f0ea239\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\edaef6a29828a5e75e7d273bf8a6669b\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ffb1a503cd8114f88d2a559904d39c33\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\646a8bce9abeceb5e690e056d29e7022\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1c8162bf639b71f8e04d4010a0d229b6\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\82fa4eac4420087c83691d83b4f7bca2\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3dccf99b63d5cb98b40d12a47b1122b5\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.5.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97032b2ba8e2ddf5e22c3e66c902fbf3\transformed\core-1.5.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\79fe783c9ab9dfb4960da28b13265663\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\38183a297e49a14b513e6a41b80e35cb\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\cc024b5cd9d620205a743964aa6d6f34\transformed\savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\9a1c117fd1e3f0543c9d6f43770f5660\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b8f993120600a6eeb681d2962a635a6b\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1fc424cd23af820567a69daa29fc9b0e\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1fce24e3dcbdf51549fd8e45ce8c88a1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f307309948805a86556e496913694fc7\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8277387f1d764daa9da1b863895a8658\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8ddceb8b2bbc526fab35e83f580e3fc2\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\67090a11a91ac3626f80282dbc49be84\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f3b02673a1d7d5f31c9711d728a73d96\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\11cf99ce42b298363561f4e88169756a\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\892db46eeff8aa228ae4d47a70c7a5ca\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1ec0887a1cd80635cc758f8d1cdc5db2\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\80ae9a390843b2c76fa622313f0907b0\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fedf685a4ed78b73fc9979f1d71d7049\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\e3e177dd11b54c54b67fa43644e27b8f\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.hilt:hilt-navigation-compose:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4e57970d9acb7b5316bf2e73e85707ea\transformed\hilt-navigation-compose-1.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.hilt:hilt-navigation:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\7fff4f84845b26a19f888614920cbab5\transformed\hilt-navigation-1.1.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-common:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\0d8d2eadc09b517aef247dd70f4aca70\transformed\navigation-common-2.7.5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\bc3711aeca9f5422742ac7ab8864b71b\transformed\navigation-runtime-2.7.5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2065803f7cfc876001e4c59969d52a91\transformed\navigation-common-ktx-2.7.5\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\050a2ad2ad4ac4fcc915d371a388eceb\transformed\navigation-runtime-ktx-2.7.5\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\712f77ea497bb283fbb17814e6dad041\transformed\navigation-compose-2.7.5\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3:1.1.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3549c3eb5b9e2cd5407d51d334b9ab75\transformed\material3-1.1.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\406464679efe00fced530de8651f62a1\transformed\material-ripple-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ca97e8485ae9f3783b51ff314bdc7f58\transformed\material-icons-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\564016ce5a702aecf2fa66b7843fff3f\transformed\material-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\dd250cd47fa1644be2fad2c916724bca\transformed\animation-core-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b23999ca4c22c7e51ab26cfbcff03dd1\transformed\animation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\d766f3654e32912845a428e3b34e261f\transformed\foundation-layout-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8377fab4e8faff3704bd7bb06e6715e3\transformed\foundation-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b0db1463ef27da109787a12854549c80\transformed\ui-tooling-data-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\6cb3b458962546d9e2cffb90e690048d\transformed\ui-unit-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\57004491af8fe064209882b7eb91fd45\transformed\ui-geometry-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4ceb1b1ec17e9f67726bc4ef744ef8b0\transformed\ui-util-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c910095d33016577072e851d3ae15377\transformed\ui-text-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f777bc83d32ec9197d87ae85a6b47df4\transformed\ui-tooling-preview-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\151ed88de2f1744d197faafa1155e354\transformed\ui-graphics-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.dagger:hilt-android:2.48] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fb40ecf2af563b0dd05d93dc61628667\transformed\hilt-android-2.48\AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.fragment:fragment:1.5.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\02120be2c946f8166f9070654556e9c6\transformed\fragment-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.8.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\30b6fcfac80b9fc885568f4b627a3ff0\transformed\activity-1.8.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ff6e9015a40ddc7b7d489ce081d316f3\transformed\activity-ktx-1.8.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.8.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ae348482219398ce5efeacc427f5ea9e\transformed\activity-compose-1.8.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ce63641e02d36a0d8c86f98c8121e01a\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\41feb3d6d8bed4050816f90c4cb550c8\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\e3bb2adc2397981b0cc69c55b34dcb7f\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\44c7e99763b7be64e41823d861278f54\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\aaa3a9f14d4da1f8cff2628d6f1944f6\transformed\lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ebb34cda86bd0822275764ec78829fa4\transformed\lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\65e809525d01c10072f8448b1ee747f5\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2a795cac75c8af90b75f75c207ce2c1e\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\bb1be53f3ae018b81969b2cdc714903d\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8f362f4f812b1a170dfa1b683f08b4b5\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b358cb3360f5ec1c44053a9197a88fde\transformed\lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a84bb70816d55c0b08281b48ddb1ae25\transformed\lifecycle-viewmodel-compose-2.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\726768fe9de8c6153bea340e3c998fe0\transformed\ui-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\18b78deac21766ff16c620f4aa003a25\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f66f9d9276edacc8bf30d89c7d8bec2e\transformed\appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2b16fbc759301ddc243fbd080bc19288\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c84790d999f85aeceb9ab25ed2390492\transformed\autofill-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\9071e31a2b9fb6c4593610aeb432e1ba\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8b2ee91bd5cb421b7719ebecf1ec11d0\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fa3be004b5492ad2938db2f0fc6dfb64\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\cefebfd72eddf5b00757c3692187eae0\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\e95e760b89f01bd6174c64017ba7beef\transformed\core-ktx-1.12.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\343d6321e733b76ca9e95de6b18fe1d4\transformed\room-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2610bedbca6703a2923056eeddcc838e\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\0098c6bfed7edcdea9ca78a2e15551b3\transformed\sqlite-2.4.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b934be7504f2c1b4471d757ca8104e9c\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ad5a65affc43e5396de6d11b3a77d078\transformed\runtime-saveable-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3c2a74840e1c3b40e50846f7d70d2367\transformed\runtime-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f874e296539277198cf0d6e843187d0b\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\59fa1cba246d86a5f1531ec792f4312c\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\725e7b16e7083713aab47b6cfba9a362\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8a69c628e93d2e461560935f979cf427\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ef930f452b8a3107b9fdc7ebea25ec8b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\45522f88dec5621fb775681dae93a0f8\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.48] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\31d51c0e98c12578f48f7442fbfe9162\transformed\dagger-lint-aar-2.48\AndroidManifest.xml:16:1-19:12
 	package
 		INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -84,18 +120,30 @@ ADDED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\Android
 application
 ADDED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:22:5-44:19
 INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:22:5-44:19
-MERGED from [com.google.android.material:material:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c29480f4beed49c5318a0cab14389771\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c29480f4beed49c5318a0cab14389771\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f43a27f9f138f8904f887e108a974a9d\transformed\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f43a27f9f138f8904f887e108a974a9d\transformed\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
-MERGED from [androidx.core:core:1.5.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97032b2ba8e2ddf5e22c3e66c902fbf3\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.5.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97032b2ba8e2ddf5e22c3e66c902fbf3\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1fce24e3dcbdf51549fd8e45ce8c88a1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1fce24e3dcbdf51549fd8e45ce8c88a1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fedf685a4ed78b73fc9979f1d71d7049\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fedf685a4ed78b73fc9979f1d71d7049\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\725e7b16e7083713aab47b6cfba9a362\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\725e7b16e7083713aab47b6cfba9a362\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ef930f452b8a3107b9fdc7ebea25ec8b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ef930f452b8a3107b9fdc7ebea25ec8b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
 		INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.5.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97032b2ba8e2ddf5e22c3e66c902fbf3\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
 		ADDED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:26:9-35
 	android:label
@@ -136,77 +184,261 @@ uses-sdk
 INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml
-MERGED from [com.google.android.material:material:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c29480f4beed49c5318a0cab14389771\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c29480f4beed49c5318a0cab14389771\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f43a27f9f138f8904f887e108a974a9d\transformed\constraintlayout-2.1.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f43a27f9f138f8904f887e108a974a9d\transformed\constraintlayout-2.1.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\699589b4f17e813058f21c67c73755d5\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\699589b4f17e813058f21c67c73755d5\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b8ff39f1dcdc9a76ca0ccbdc510042f\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b8ff39f1dcdc9a76ca0ccbdc510042f\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c6071a5c8333a28856347225e47965f9\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c6071a5c8333a28856347225e47965f9\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.2.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\5c25b17aec8f3f36129f228b01ad855e\transformed\activity-1.2.4\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.2.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\5c25b17aec8f3f36129f228b01ad855e\transformed\activity-1.2.4\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fdd7d537c90d9cb78523ed866090e8f7\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fdd7d537c90d9cb78523ed866090e8f7\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\d5bcc472fc8199ccbbf9c6355ad7b75d\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\d5bcc472fc8199ccbbf9c6355ad7b75d\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\6053aa5ac3b6a0d514fd0c0a52d2c07f\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\6053aa5ac3b6a0d514fd0c0a52d2c07f\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3b17d217efaec8de54717777c656f4f4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3b17d217efaec8de54717777c656f4f4\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\9294a5039400922b4f35055d7049c64a\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\9294a5039400922b4f35055d7049c64a\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c4daeb91068207233d4877fd7f0ea239\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c4daeb91068207233d4877fd7f0ea239\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\edaef6a29828a5e75e7d273bf8a6669b\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\edaef6a29828a5e75e7d273bf8a6669b\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ffb1a503cd8114f88d2a559904d39c33\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ffb1a503cd8114f88d2a559904d39c33\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\646a8bce9abeceb5e690e056d29e7022\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\646a8bce9abeceb5e690e056d29e7022\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1c8162bf639b71f8e04d4010a0d229b6\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1c8162bf639b71f8e04d4010a0d229b6\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\82fa4eac4420087c83691d83b4f7bca2\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\82fa4eac4420087c83691d83b4f7bca2\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3dccf99b63d5cb98b40d12a47b1122b5\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3dccf99b63d5cb98b40d12a47b1122b5\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.5.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97032b2ba8e2ddf5e22c3e66c902fbf3\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.5.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97032b2ba8e2ddf5e22c3e66c902fbf3\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\79fe783c9ab9dfb4960da28b13265663\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\79fe783c9ab9dfb4960da28b13265663\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\38183a297e49a14b513e6a41b80e35cb\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\38183a297e49a14b513e6a41b80e35cb\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\cc024b5cd9d620205a743964aa6d6f34\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\cc024b5cd9d620205a743964aa6d6f34\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\9a1c117fd1e3f0543c9d6f43770f5660\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\9a1c117fd1e3f0543c9d6f43770f5660\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b8f993120600a6eeb681d2962a635a6b\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b8f993120600a6eeb681d2962a635a6b\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1fc424cd23af820567a69daa29fc9b0e\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1fc424cd23af820567a69daa29fc9b0e\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1fce24e3dcbdf51549fd8e45ce8c88a1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1fce24e3dcbdf51549fd8e45ce8c88a1\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f307309948805a86556e496913694fc7\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f307309948805a86556e496913694fc7\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8277387f1d764daa9da1b863895a8658\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8277387f1d764daa9da1b863895a8658\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8ddceb8b2bbc526fab35e83f580e3fc2\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8ddceb8b2bbc526fab35e83f580e3fc2\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\67090a11a91ac3626f80282dbc49be84\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\67090a11a91ac3626f80282dbc49be84\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f3b02673a1d7d5f31c9711d728a73d96\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f3b02673a1d7d5f31c9711d728a73d96\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\11cf99ce42b298363561f4e88169756a\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\11cf99ce42b298363561f4e88169756a\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\892db46eeff8aa228ae4d47a70c7a5ca\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\892db46eeff8aa228ae4d47a70c7a5ca\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1ec0887a1cd80635cc758f8d1cdc5db2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\1ec0887a1cd80635cc758f8d1cdc5db2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\80ae9a390843b2c76fa622313f0907b0\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\80ae9a390843b2c76fa622313f0907b0\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fedf685a4ed78b73fc9979f1d71d7049\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fedf685a4ed78b73fc9979f1d71d7049\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\e3e177dd11b54c54b67fa43644e27b8f\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\e3e177dd11b54c54b67fa43644e27b8f\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.hilt:hilt-navigation-compose:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4e57970d9acb7b5316bf2e73e85707ea\transformed\hilt-navigation-compose-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4e57970d9acb7b5316bf2e73e85707ea\transformed\hilt-navigation-compose-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\7fff4f84845b26a19f888614920cbab5\transformed\hilt-navigation-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\7fff4f84845b26a19f888614920cbab5\transformed\hilt-navigation-1.1.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\0d8d2eadc09b517aef247dd70f4aca70\transformed\navigation-common-2.7.5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\0d8d2eadc09b517aef247dd70f4aca70\transformed\navigation-common-2.7.5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\bc3711aeca9f5422742ac7ab8864b71b\transformed\navigation-runtime-2.7.5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\bc3711aeca9f5422742ac7ab8864b71b\transformed\navigation-runtime-2.7.5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2065803f7cfc876001e4c59969d52a91\transformed\navigation-common-ktx-2.7.5\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2065803f7cfc876001e4c59969d52a91\transformed\navigation-common-ktx-2.7.5\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\050a2ad2ad4ac4fcc915d371a388eceb\transformed\navigation-runtime-ktx-2.7.5\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\050a2ad2ad4ac4fcc915d371a388eceb\transformed\navigation-runtime-ktx-2.7.5\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\712f77ea497bb283fbb17814e6dad041\transformed\navigation-compose-2.7.5\AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\712f77ea497bb283fbb17814e6dad041\transformed\navigation-compose-2.7.5\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3549c3eb5b9e2cd5407d51d334b9ab75\transformed\material3-1.1.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3549c3eb5b9e2cd5407d51d334b9ab75\transformed\material3-1.1.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\406464679efe00fced530de8651f62a1\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\406464679efe00fced530de8651f62a1\transformed\material-ripple-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ca97e8485ae9f3783b51ff314bdc7f58\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ca97e8485ae9f3783b51ff314bdc7f58\transformed\material-icons-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\564016ce5a702aecf2fa66b7843fff3f\transformed\material-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\564016ce5a702aecf2fa66b7843fff3f\transformed\material-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\dd250cd47fa1644be2fad2c916724bca\transformed\animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\dd250cd47fa1644be2fad2c916724bca\transformed\animation-core-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b23999ca4c22c7e51ab26cfbcff03dd1\transformed\animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b23999ca4c22c7e51ab26cfbcff03dd1\transformed\animation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\d766f3654e32912845a428e3b34e261f\transformed\foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\d766f3654e32912845a428e3b34e261f\transformed\foundation-layout-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8377fab4e8faff3704bd7bb06e6715e3\transformed\foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8377fab4e8faff3704bd7bb06e6715e3\transformed\foundation-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b0db1463ef27da109787a12854549c80\transformed\ui-tooling-data-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b0db1463ef27da109787a12854549c80\transformed\ui-tooling-data-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\6cb3b458962546d9e2cffb90e690048d\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\6cb3b458962546d9e2cffb90e690048d\transformed\ui-unit-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\57004491af8fe064209882b7eb91fd45\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\57004491af8fe064209882b7eb91fd45\transformed\ui-geometry-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4ceb1b1ec17e9f67726bc4ef744ef8b0\transformed\ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4ceb1b1ec17e9f67726bc4ef744ef8b0\transformed\ui-util-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c910095d33016577072e851d3ae15377\transformed\ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c910095d33016577072e851d3ae15377\transformed\ui-text-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f777bc83d32ec9197d87ae85a6b47df4\transformed\ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f777bc83d32ec9197d87ae85a6b47df4\transformed\ui-tooling-preview-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\151ed88de2f1744d197faafa1155e354\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\151ed88de2f1744d197faafa1155e354\transformed\ui-graphics-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:hilt-android:2.48] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fb40ecf2af563b0dd05d93dc61628667\transformed\hilt-android-2.48\AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.48] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fb40ecf2af563b0dd05d93dc61628667\transformed\hilt-android-2.48\AndroidManifest.xml:18:3-42
+MERGED from [androidx.fragment:fragment:1.5.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\02120be2c946f8166f9070654556e9c6\transformed\fragment-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\02120be2c946f8166f9070654556e9c6\transformed\fragment-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.8.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\30b6fcfac80b9fc885568f4b627a3ff0\transformed\activity-1.8.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\30b6fcfac80b9fc885568f4b627a3ff0\transformed\activity-1.8.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ff6e9015a40ddc7b7d489ce081d316f3\transformed\activity-ktx-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ff6e9015a40ddc7b7d489ce081d316f3\transformed\activity-ktx-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ae348482219398ce5efeacc427f5ea9e\transformed\activity-compose-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ae348482219398ce5efeacc427f5ea9e\transformed\activity-compose-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ce63641e02d36a0d8c86f98c8121e01a\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ce63641e02d36a0d8c86f98c8121e01a\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\41feb3d6d8bed4050816f90c4cb550c8\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\41feb3d6d8bed4050816f90c4cb550c8\transformed\lifecycle-livedata-core-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\e3bb2adc2397981b0cc69c55b34dcb7f\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\e3bb2adc2397981b0cc69c55b34dcb7f\transformed\lifecycle-livedata-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\44c7e99763b7be64e41823d861278f54\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\44c7e99763b7be64e41823d861278f54\transformed\lifecycle-livedata-core-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\aaa3a9f14d4da1f8cff2628d6f1944f6\transformed\lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\aaa3a9f14d4da1f8cff2628d6f1944f6\transformed\lifecycle-viewmodel-ktx-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ebb34cda86bd0822275764ec78829fa4\transformed\lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ebb34cda86bd0822275764ec78829fa4\transformed\lifecycle-viewmodel-savedstate-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\65e809525d01c10072f8448b1ee747f5\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\65e809525d01c10072f8448b1ee747f5\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2a795cac75c8af90b75f75c207ce2c1e\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2a795cac75c8af90b75f75c207ce2c1e\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\bb1be53f3ae018b81969b2cdc714903d\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\bb1be53f3ae018b81969b2cdc714903d\transformed\lifecycle-viewmodel-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8f362f4f812b1a170dfa1b683f08b4b5\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8f362f4f812b1a170dfa1b683f08b4b5\transformed\lifecycle-runtime-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b358cb3360f5ec1c44053a9197a88fde\transformed\lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b358cb3360f5ec1c44053a9197a88fde\transformed\lifecycle-runtime-ktx-2.7.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a84bb70816d55c0b08281b48ddb1ae25\transformed\lifecycle-viewmodel-compose-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a84bb70816d55c0b08281b48ddb1ae25\transformed\lifecycle-viewmodel-compose-2.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\726768fe9de8c6153bea340e3c998fe0\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\726768fe9de8c6153bea340e3c998fe0\transformed\ui-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\18b78deac21766ff16c620f4aa003a25\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\18b78deac21766ff16c620f4aa003a25\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f66f9d9276edacc8bf30d89c7d8bec2e\transformed\appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f66f9d9276edacc8bf30d89c7d8bec2e\transformed\appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2b16fbc759301ddc243fbd080bc19288\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2b16fbc759301ddc243fbd080bc19288\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c84790d999f85aeceb9ab25ed2390492\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c84790d999f85aeceb9ab25ed2390492\transformed\autofill-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\9071e31a2b9fb6c4593610aeb432e1ba\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\9071e31a2b9fb6c4593610aeb432e1ba\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8b2ee91bd5cb421b7719ebecf1ec11d0\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8b2ee91bd5cb421b7719ebecf1ec11d0\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fa3be004b5492ad2938db2f0fc6dfb64\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\fa3be004b5492ad2938db2f0fc6dfb64\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\cefebfd72eddf5b00757c3692187eae0\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\cefebfd72eddf5b00757c3692187eae0\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\e95e760b89f01bd6174c64017ba7beef\transformed\core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\e95e760b89f01bd6174c64017ba7beef\transformed\core-ktx-1.12.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\343d6321e733b76ca9e95de6b18fe1d4\transformed\room-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\343d6321e733b76ca9e95de6b18fe1d4\transformed\room-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2610bedbca6703a2923056eeddcc838e\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2610bedbca6703a2923056eeddcc838e\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\0098c6bfed7edcdea9ca78a2e15551b3\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\0098c6bfed7edcdea9ca78a2e15551b3\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b934be7504f2c1b4471d757ca8104e9c\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b934be7504f2c1b4471d757ca8104e9c\transformed\annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ad5a65affc43e5396de6d11b3a77d078\transformed\runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ad5a65affc43e5396de6d11b3a77d078\transformed\runtime-saveable-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3c2a74840e1c3b40e50846f7d70d2367\transformed\runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\3c2a74840e1c3b40e50846f7d70d2367\transformed\runtime-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f874e296539277198cf0d6e843187d0b\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\f874e296539277198cf0d6e843187d0b\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\59fa1cba246d86a5f1531ec792f4312c\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\59fa1cba246d86a5f1531ec792f4312c\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\725e7b16e7083713aab47b6cfba9a362\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\725e7b16e7083713aab47b6cfba9a362\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8a69c628e93d2e461560935f979cf427\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\8a69c628e93d2e461560935f979cf427\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ef930f452b8a3107b9fdc7ebea25ec8b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ef930f452b8a3107b9fdc7ebea25ec8b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\45522f88dec5621fb775681dae93a0f8\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\45522f88dec5621fb775681dae93a0f8\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:dagger-lint-aar:2.48] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\31d51c0e98c12578f48f7442fbfe9162\transformed\dagger-lint-aar-2.48\AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.48] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\31d51c0e98c12578f48f7442fbfe9162\transformed\dagger-lint-aar-2.48\AndroidManifest.xml:18:3-42
 	android:targetSdkVersion
 		INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:24:13-63
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ef930f452b8a3107b9fdc7ebea25ec8b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ef930f452b8a3107b9fdc7ebea25ec8b\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+permission#com.abcaprende.leer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+uses-permission#com.abcaprende.leer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92

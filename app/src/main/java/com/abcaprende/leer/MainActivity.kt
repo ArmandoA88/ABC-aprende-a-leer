@@ -4,25 +4,20 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
+import androidx.compose.foundation.layout.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.abcaprende.leer.presentation.screens.HomeScreen
-import com.abcaprende.leer.presentation.screens.LetterSelectionScreen
-import com.abcaprende.leer.presentation.screens.LetterActivityScreen
-import com.abcaprende.leer.presentation.screens.TraceScreen
-import com.abcaprende.leer.presentation.screens.VoiceScreen
-import com.abcaprende.leer.presentation.screens.MiniGameScreen
-import com.abcaprende.leer.presentation.screens.ParentScreen
 import com.abcaprende.leer.presentation.viewmodels.MainViewModel
 import com.abcaprende.leer.ui.theme.ABCAprendeTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -63,54 +58,77 @@ fun ABCAprendeApp() {
             )
         }
         
+        // Pantallas temporales - mostrar mensaje de "Próximamente"
         composable("letter_selection") {
-            LetterSelectionScreen(
-                navController = navController,
-                viewModel = mainViewModel
-            )
+            ComingSoonScreen(navController = navController, title = "Selección de Letras")
         }
         
-        composable("letter_activity/{letter}") { backStackEntry ->
-            val letter = backStackEntry.arguments?.getString("letter") ?: "A"
-            LetterActivityScreen(
-                navController = navController,
-                viewModel = mainViewModel,
-                letter = letter
-            )
+        composable("letter_activity/{letter}") {
+            ComingSoonScreen(navController = navController, title = "Actividad de Letra")
         }
         
-        composable("trace/{letter}") { backStackEntry ->
-            val letter = backStackEntry.arguments?.getString("letter") ?: "A"
-            TraceScreen(
-                navController = navController,
-                viewModel = mainViewModel,
-                letter = letter
-            )
+        composable("trace/{letter}") {
+            ComingSoonScreen(navController = navController, title = "Trazar Letra")
         }
         
-        composable("voice/{letter}") { backStackEntry ->
-            val letter = backStackEntry.arguments?.getString("letter") ?: "A"
-            VoiceScreen(
-                navController = navController,
-                viewModel = mainViewModel,
-                letter = letter
-            )
+        composable("voice/{letter}") {
+            ComingSoonScreen(navController = navController, title = "Reconocimiento de Voz")
         }
         
-        composable("minigame/{letter}") { backStackEntry ->
-            val letter = backStackEntry.arguments?.getString("letter") ?: "A"
-            MiniGameScreen(
-                navController = navController,
-                viewModel = mainViewModel,
-                letter = letter
-            )
+        composable("minigame/{letter}") {
+            ComingSoonScreen(navController = navController, title = "Mini Juego")
         }
         
         composable("parent") {
-            ParentScreen(
-                navController = navController,
-                viewModel = mainViewModel
+            ComingSoonScreen(navController = navController, title = "Panel de Padres")
+        }
+    }
+}
+
+@Composable
+fun ComingSoonScreen(
+    navController: NavController,
+    title: String
+) {
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = MaterialTheme.colorScheme.background
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
+            Text(
+                text = "🚧",
+                style = MaterialTheme.typography.displayLarge
             )
+            
+            Spacer(modifier = Modifier.height(16.dp))
+            
+            Text(
+                text = title,
+                style = MaterialTheme.typography.headlineMedium,
+                textAlign = TextAlign.Center
+            )
+            
+            Spacer(modifier = Modifier.height(8.dp))
+            
+            Text(
+                text = "Próximamente",
+                style = MaterialTheme.typography.bodyLarge,
+                textAlign = TextAlign.Center
+            )
+            
+            Spacer(modifier = Modifier.height(32.dp))
+            
+            Button(
+                onClick = { navController.popBackStack() }
+            ) {
+                Text("Volver")
+            }
         }
     }
 }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.abcaprende.leer.app-mergeDebugResources-16:/values-v16/values-v16.xml",
+            "outputFile": "com.abcaprende.leer.app-mergeDebugResources-60:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Casa-Desktop\\.gradle\\caches\\transforms-3\\699589b4f17e813058f21c67c73755d5\\transformed\\appcompat-1.3.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Casa-Desktop\\.gradle\\caches\\transforms-3\\e3e177dd11b54c54b67fa43644e27b8f\\transformed\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Casa-Desktop\\.gradle\\caches\\transforms-3\\97032b2ba8e2ddf5e22c3e66c902fbf3\\transformed\\core-1.5.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Casa-Desktop\\.gradle\\caches\\transforms-3\\189c0356bffe4f08ac68c3e457576f76\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

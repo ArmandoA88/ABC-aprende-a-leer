@@ -6,7 +6,7 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-9        android:targetSdkVersion="33" />
+9        android:targetSdkVersion="34" />
 10
 11    <!-- Permisos necesarios -->
 12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -42,49 +42,147 @@
 27        android:required="true" />
 27-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:20:9-32
 28
-29    <application
-29-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:22:5-44:19
-30        android:name="com.abcaprende.leer.ABCAprendeApplication"
-30-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:23:9-46
-31        android:allowBackup="true"
-31-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:24:9-35
-32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-32-->[androidx.core:core:1.5.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97032b2ba8e2ddf5e22c3e66c902fbf3\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
-33        android:debuggable="true"
-34        android:extractNativeLibs="true"
-35        android:hardwareAccelerated="true"
-35-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:28:9-43
-36        android:label="@string/app_name"
-36-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:25:9-41
-37        android:supportsRtl="true"
-37-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:26:9-35
-38        android:theme="@style/Theme.ABCAprende" >
-38-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:27:9-48
-39        <activity
-39-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:30:9-41:20
-40            android:name="com.abcaprende.leer.MainActivity"
-40-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:31:13-41
-41            android:configChanges="orientation|keyboardHidden|screenSize"
-41-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:36:13-74
-42            android:exported="true"
-42-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:32:13-36
-43            android:label="@string/app_name"
-43-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:33:13-45
-44            android:screenOrientation="portrait"
-44-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:35:13-49
-45            android:theme="@style/Theme.ABCAprende" >
-45-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:34:13-52
-46            <intent-filter>
-46-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:37:13-40:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:38:17-69
-47-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:38:25-66
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:39:17-77
-49-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:39:27-74
-50            </intent-filter>
-51        </activity>
-52    </application>
-53
-54</manifest>
+29    <permission
+29-->[androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+30        android:name="com.abcaprende.leer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+30-->[androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+31        android:protectionLevel="signature" />
+31-->[androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+32
+33    <uses-permission android:name="com.abcaprende.leer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+33-->[androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+33-->[androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+34
+35    <application
+35-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:22:5-44:19
+36        android:name="com.abcaprende.leer.ABCAprendeApplication"
+36-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:23:9-46
+37        android:allowBackup="true"
+37-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:24:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.12.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\189c0356bffe4f08ac68c3e457576f76\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+39        android:debuggable="true"
+40        android:extractNativeLibs="true"
+41        android:hardwareAccelerated="true"
+41-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:28:9-43
+42        android:label="@string/app_name"
+42-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:25:9-41
+43        android:supportsRtl="true"
+43-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:26:9-35
+44        android:theme="@style/Theme.ABCAprende" >
+44-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:27:9-48
+45        <activity
+45-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:30:9-41:20
+46            android:name="com.abcaprende.leer.MainActivity"
+46-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:31:13-41
+47            android:configChanges="orientation|keyboardHidden|screenSize"
+47-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:36:13-74
+48            android:exported="true"
+48-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:32:13-36
+49            android:label="@string/app_name"
+49-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:33:13-45
+50            android:screenOrientation="portrait"
+50-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:35:13-49
+51            android:theme="@style/Theme.ABCAprende" >
+51-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:34:13-52
+52            <intent-filter>
+52-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:37:13-40:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:38:17-69
+53-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:38:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:39:17-77
+55-->C:\Users\Casa-Desktop\Desktop\ABC-aprende-a-leer\app\src\main\AndroidManifest.xml:39:27-74
+56            </intent-filter>
+57        </activity>
+58        <activity
+58-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+59            android:name="androidx.compose.ui.tooling.PreviewActivity"
+59-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+60            android:exported="true" />
+60-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+61        <activity
+61-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:23:9-25:39
+62            android:name="androidx.activity.ComponentActivity"
+62-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:24:13-63
+63            android:exported="true" />
+63-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:25:13-36
+64
+65        <provider
+65-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+66            android:name="androidx.startup.InitializationProvider"
+66-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+67            android:authorities="com.abcaprende.leer.androidx-startup"
+67-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+68            android:exported="false" >
+68-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+69            <meta-data
+69-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+70-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+71                android:value="androidx.startup" />
+71-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+73-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+74                android:value="androidx.startup" />
+74-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+75            <meta-data
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+76                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+77                android:value="androidx.startup" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+78        </provider>
+79
+80        <service
+80-->[androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+81            android:name="androidx.room.MultiInstanceInvalidationService"
+81-->[androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+82            android:directBootAware="true"
+82-->[androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+83            android:exported="false" />
+83-->[androidx.room:room-runtime:2.6.1] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\4b521043271ab0679caf5bf957a368e2\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+84
+85        <receiver
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+86            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+87            android:directBootAware="false"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+88            android:enabled="true"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+89            android:exported="true"
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+90            android:permission="android.permission.DUMP" >
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+92                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+95                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+98                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+99            </intent-filter>
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+101                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\97b5780b3bbbdae380342744c9d3ecbd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+102            </intent-filter>
+103        </receiver>
+104    </application>
+105
+106</manifest>

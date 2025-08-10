@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.abcaprende.leer.data.model.AppEvent
@@ -228,7 +229,7 @@ private fun LevelButton(
     onClick: () -> Unit
 ) {
     Card(
-        onClick = if (isUnlocked) onClick else { },
+        onClick = if (isUnlocked) onClick else { {} },
         modifier = Modifier
             .fillMaxWidth()
             .height(80.dp),

@@ -21,18 +21,27 @@ class ProgressRepository @Inject constructor(
     
     // Inicializar datos si es la primera vez
     suspend fun initializeData() {
-        val existingLetters = letterDao.getAllLetters().first()
-        if (existingLetters.isEmpty()) {
-            // Insertar letras iniciales
-            letterDao.insertLetters(LetterData.letters.values.toList())
-            
-            // Crear progreso inicial para cada letra
-            LetterData.letters.keys.forEach { letter ->
-                letterProgressDao.insertProgress(LetterProgress(letter = letter))
+        try {
+            val existingLetters = letterDao.getAllLetters().first()
+            if (existingLetters.isEmpty()) {
+                // Insertar letras iniciales
+                letterDao.insertLetters(LetterData.letters.values.toList())
+                
+                // Crear progreso inicial para cada letra
+                LetterData.letters.keys.forEach { letter ->
+                    letterProgressDao.insertProgress(LetterProgress(letter = letter))
+                }
+                
+                // Crear progreso de usuario inicial
+                userProgressDao.insertUserProgress(UserProgress())
             }
-            
-            // Crear progreso de usuario inicial
-            userProgressDao.insertUserProgress(UserProgress())
+        } catch (e: Exception) {
+            // Si hay error en la inicialización, crear datos básicos
+            try {
+                userProgressDao.insertUserProgress(UserProgress())
+            } catch (e2: Exception) {
+                // Ignorar si ya existe
+            }
         }
     }
     
@@ -149,7 +158,7 @@ class ProgressRepository @Inject constructor(
         
         return mapOf(
             "exportDate" to System.currentTimeMillis(),
-            "userProgress" to userProgress,
+            "userProgress" to (userProgress ?: "null"),
             "letterProgress" to letterProgress,
             "masteredCount" to getMasteredCount(),
             "accuracyRate" to getAccuracyRate()
