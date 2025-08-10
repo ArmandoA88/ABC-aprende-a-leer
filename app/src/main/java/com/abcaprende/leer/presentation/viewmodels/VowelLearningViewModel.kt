@@ -43,19 +43,19 @@ class VowelLearningViewModel @Inject constructor(
     private val vowels = listOf("A", "E", "I", "O", "U")
     
     private val successMessages = listOf(
-        "¡Excelente! 🎉",
-        "¡Muy bien! 👏",
-        "¡Perfecto! ⭐",
-        "¡Fantástico! 🌟",
-        "¡Increíble! 🎊"
+        "¡MUY BIEN! 🎉",
+        "¡GENIAL! 👏",
+        "¡SÍ! ⭐",
+        "¡BRAVO! 🌟",
+        "¡WOW! 🎊"
     )
     
     private val encouragementMessages = listOf(
-        "¡Sigue intentando! 💪",
-        "¡Casi lo tienes! 🎯",
-        "¡Inténtalo otra vez! 🔄",
-        "¡Tú puedes! 💫",
-        "¡Vamos, una vez más! 🚀"
+        "¡OTRA VEZ! 💪",
+        "¡CASI! 🎯",
+        "¡VAMOS! 🔄",
+        "¡TÚ PUEDES! 💫",
+        "¡INTENTA! 🚀"
     )
 
     init {

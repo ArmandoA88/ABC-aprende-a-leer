@@ -17,6 +17,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -104,13 +105,20 @@ fun VowelLearningScreen(
             
             Spacer(modifier = Modifier.height(20.dp))
             
-            // Feedback
+            // Feedback con celebración
             if (state.showFeedback) {
-                FeedbackCard(
-                    message = state.feedbackMessage,
-                    type = state.feedbackType,
-                    onDismiss = { viewModel.dismissFeedback() }
-                )
+                if (state.feedbackType == FeedbackType.SUCCESS) {
+                    CelebrationCard(
+                        message = state.feedbackMessage,
+                        onDismiss = { viewModel.dismissFeedback() }
+                    )
+                } else {
+                    FeedbackCard(
+                        message = state.feedbackMessage,
+                        type = state.feedbackType,
+                        onDismiss = { viewModel.dismissFeedback() }
+                    )
+                }
             }
             
             // Error handling
@@ -158,13 +166,13 @@ private fun VowelLearningHeader(
         verticalAlignment = Alignment.CenterVertically
     ) {
         // Título
-        Text(
-            text = "Aprende la $vowel",
-            style = MaterialTheme.typography.headlineMedium.copy(
-                color = Color.White,
-                fontWeight = FontWeight.Bold
+            Text(
+                text = "ESCUCHAR",
+                style = MaterialTheme.typography.headlineMedium.copy(
+                    fontWeight = FontWeight.Bold,
+                    color = Color.White
+                )
             )
-        )
         
         // Puntuación
         Card(
@@ -494,6 +502,122 @@ private fun ErrorCard(
     }
 }
 
+// Componente de celebración animada para niños
+@Composable
+private fun CelebrationCard(
+    message: String,
+    onDismiss: () -> Unit
+) {
+    var celebrationScale by remember { mutableStateOf(0.5f) }
+    var starRotation by remember { mutableStateOf(0f) }
+    
+    val scale by animateFloatAsState(
+        targetValue = celebrationScale,
+        animationSpec = tween(600),
+        label = "celebrationScale"
+    )
+    
+    val rotation by animateFloatAsState(
+        targetValue = starRotation,
+        animationSpec = tween(1000),
+        label = "starRotation"
+    )
+    
+    LaunchedEffect(Unit) {
+        celebrationScale = 1.1f
+        starRotation = 360f
+        kotlinx.coroutines.delay(4000)
+        onDismiss()
+    }
+    
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .scale(scale),
+        colors = CardDefaults.cardColors(
+            containerColor = SuccessGreen.copy(alpha = 0.95f)
+        ),
+        shape = RoundedCornerShape(24.dp),
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = 16.dp
+        )
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            // Estrellas animadas
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            ) {
+                repeat(5) { index ->
+                    Text(
+                        text = "⭐",
+                        style = MaterialTheme.typography.displayMedium,
+                        modifier = Modifier
+                            .scale(1.2f + (index * 0.1f))
+                            .graphicsLayer {
+                                rotationZ = rotation + (index * 72f)
+                            }
+                    )
+                }
+            }
+            
+            Spacer(modifier = Modifier.height(16.dp))
+            
+            // Mensaje de celebración MÁS GRANDE
+            Text(
+                text = message,
+                style = MaterialTheme.typography.displaySmall.copy(
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center
+                )
+            )
+            
+            Spacer(modifier = Modifier.height(16.dp))
+            
+            // Emojis de celebración
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                val celebrationEmojis = listOf("🎉", "🎊", "👏", "🌟", "🎈")
+                celebrationEmojis.forEach { emoji ->
+                    Text(
+                        text = emoji,
+                        style = MaterialTheme.typography.displayMedium,
+                        modifier = Modifier.scale(1.3f)
+                    )
+                }
+            }
+            
+            Spacer(modifier = Modifier.height(20.dp))
+            
+            // Botón OK más grande
+            Button(
+                onClick = onDismiss,
+                modifier = Modifier
+                    .width(120.dp)
+                    .height(50.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.White.copy(alpha = 0.9f)
+                ),
+                shape = RoundedCornerShape(25.dp)
+            ) {
+                Text(
+                    text = "¡SÍ!",
+                    style = MaterialTheme.typography.titleLarge.copy(
+                        color = SuccessGreen,
+                        fontWeight = FontWeight.Bold
+                    )
+                )
+            }
+        }
+    }
+}
+
 @Composable
 private fun BackButton(onClick: () -> Unit) {
     Button(
@@ -507,10 +631,10 @@ private fun BackButton(onClick: () -> Unit) {
         shape = RoundedCornerShape(28.dp)
     ) {
         Text(
-            text = "← Volver a Vocales",
+            text = "← VOLVER",
             style = MaterialTheme.typography.titleMedium.copy(
                 color = Color.White,
-                fontWeight = FontWeight.Medium
+                fontWeight = FontWeight.Bold
             )
         )
     }
@@ -666,7 +790,7 @@ private fun SimpleBigButtons(
             )
             Spacer(modifier = Modifier.width(16.dp))
             Text(
-                text = if (isListening) "ESCUCHANDO..." else "REPETIR",
+                text = if (isListening) "OYE..." else "DECIR",
                 style = MaterialTheme.typography.headlineMedium.copy(
                     fontWeight = FontWeight.Bold,
                     color = Color.White

@@ -20,6 +20,7 @@ import androidx.navigation.compose.rememberNavController
 import com.abcaprende.leer.presentation.screens.HomeScreen
 import com.abcaprende.leer.presentation.screens.VowelSelectionScreen
 import com.abcaprende.leer.presentation.screens.VowelLearningScreen
+import com.abcaprende.leer.presentation.screens.TracingScreen
 import com.abcaprende.leer.presentation.viewmodels.MainViewModel
 import com.abcaprende.leer.ui.theme.ABCAprendeTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -72,6 +73,11 @@ fun ABCAprendeApp() {
                 navController = navController,
                 vowel = vowel
             )
+        }
+        
+        // Pantalla de trazado (Nivel 2)
+        composable("tracing") {
+            TracingScreen(navController = navController)
         }
         
         composable("letter_activity/{letter}") {

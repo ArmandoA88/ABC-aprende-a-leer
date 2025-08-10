@@ -3,6 +3,7 @@ package com.abcaprende.leer.presentation.screens
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.*
@@ -13,6 +14,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -69,13 +71,14 @@ fun HomeScreen(
                 titleScale = titleScale
             )
             
-            // Selector de niveles
+            // Selector de niveles - TODOS DESBLOQUEADOS
             LevelSelector(
                 currentLevel = appState.currentLevel,
-                unlockedLevels = userProgress?.unlockedLevels ?: listOf(1),
+                unlockedLevels = listOf(1, 2, 3), // TODOS DESBLOQUEADOS
                 onLevelSelected = { level ->
                     viewModel.handleEvent(AppEvent.SelectLevel(level))
-                }
+                },
+                navController = navController
             )
             
             // Botones principales
@@ -166,7 +169,8 @@ private fun StarsDisplay(totalStars: Int) {
 private fun LevelSelector(
     currentLevel: Int,
     unlockedLevels: List<Int>,
-    onLevelSelected: (Int) -> Unit
+    onLevelSelected: (Int) -> Unit,
+    navController: NavController
 ) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally
@@ -201,7 +205,11 @@ private fun LevelSelector(
                 isUnlocked = unlockedLevels.contains(2),
                 isSelected = currentLevel == 2,
                 color = Level2Color,
-                onClick = { onLevelSelected(2) }
+                onClick = { onLevelSelected(2) },
+                onDoubleClick = { 
+                    // Navegar directamente al nivel de trazado
+                    navController.navigate("tracing")
+                }
             )
             
             LevelButton(
@@ -226,13 +234,25 @@ private fun LevelButton(
     isUnlocked: Boolean,
     isSelected: Boolean,
     color: Color,
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    onDoubleClick: (() -> Unit)? = null
 ) {
     Card(
-        onClick = if (isUnlocked) onClick else { {} },
         modifier = Modifier
             .fillMaxWidth()
-            .height(80.dp),
+            .height(80.dp)
+            .pointerInput(Unit) {
+                if (isUnlocked && onDoubleClick != null) {
+                    detectTapGestures(
+                        onTap = { onClick() },
+                        onDoubleTap = { onDoubleClick() }
+                    )
+                } else if (isUnlocked) {
+                    detectTapGestures(
+                        onTap = { onClick() }
+                    )
+                }
+            },
         colors = CardDefaults.cardColors(
             containerColor = if (isSelected) {
                 color.copy(alpha = 0.3f)
