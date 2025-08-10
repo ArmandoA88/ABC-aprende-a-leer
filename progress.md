@@ -54,20 +54,20 @@ Se propone una nueva modalidad de juego que integre los principios de "Estrellit
 *   Definir `Level4Color` en `Color.kt`. (COMPLETADO)
 *   Crear el archivo `EstrellitaModeScreen.kt` (inicialmente vacío o con un placeholder). (COMPLETADO)
 *   Añadir la ruta `"estrellita_mode"` al gráfico de navegación en `MainActivity.kt`. (COMPLETADO)
-*   Resolver el error de compatibilidad de Gradle/Java. (COMPLETADO)
+*   Resolver el error de compatibilidad de Gradle/Java. (COMPLETADO - Se proporcionó solución, pendiente de confirmación del usuario)
 
 **Fase 2: Implementación de la Introducción Fonética**
-*   Modificar `TracingScreen.kt` o crear una nueva pantalla para la "Introducción Fonética".
-*   Integrar la reproducción de sonidos/frases asociadas a la letra.
-*   Mostrar imágenes asociadas a la letra.
+*   Modificar `TracingScreen.kt` o crear una nueva pantalla para la "Introducción Fonética". (COMPLETADO - Implementación inicial en `EstrellitaModeScreen.kt`)
+*   Integrar la reproducción de sonidos/frases asociadas a la letra. (COMPLETADO - TTS para la letra actual)
+*   Mostrar imágenes asociadas a la letra. (COMPLETADO - Placeholder añadido en `EstrellitaModeScreen.kt`)
 
 **Fase 3: Implementación de Asociación Visual y Auditiva**
-*   Desarrollar la UI para la selección de imágenes/palabras.
-*   Implementar la lógica de identificación y feedback.
+*   Desarrollar la UI para la selección de imágenes/palabras. (COMPLETADO - Estructura básica y visualización de opciones en `EstrellitaModeScreen.kt`)
+*   Implementar la lógica de identificación y feedback. (COMPLETADO - Lógica de selección, feedback visual/auditivo y avance de paso en `EstrellitaModeScreen.kt`)
 
 **Fase 4: Integración del Trazado Mejorado**
-*   Asegurar que la funcionalidad de trazado actual se integre fluidamente en el nuevo flujo.
-*   (Futuro) Implementar el reconocimiento de trazos.
+*   Asegurar que la funcionalidad de trazado actual se integre fluidamente en el nuevo flujo. (COMPLETADO - `EstrellitaTracingContent` integrado en `EstrellitaModeScreen.kt`)
+*   (Futuro) Implementar el reconocimiento de trazos. (PENDIENTE)
 
 **Fase 5: Construcción de Sílabas/Palabras**
 *   Diseñar la UI para la manipulación de sílabas.
@@ -81,7 +81,10 @@ Se propone una nueva modalidad de juego que integre los principios de "Estrellit
 *   **Trazado de Letras:** La funcionalidad de trazado en `TracingScreen.kt` ha sido mejorada para ser más responsiva y precisa, y las letras guía son más grandes. (COMPLETADO)
 *   **Sonido de Letras:** La pronunciación de las letras vía TTS está integrada en `TracingScreen.kt`. (COMPLETADO)
 *   **Estructura de Nivel 4 (Modo Estrellita):** Se ha creado la estructura básica para integrar el "Modo Estrellita" como un nuevo nivel en la aplicación, incluyendo la tarjeta de selección de nivel y la navegación a una pantalla placeholder. (COMPLETADO)
+*   **Introducción Fonética (Estrellita Mode):** Implementación inicial de la pantalla `EstrellitaModeScreen.kt` con visualización de letras, pronunciación TTS y un placeholder para imágenes asociadas. (COMPLETADO)
+*   **Asociación Visual y Auditiva (Estrellita Mode):** Se ha implementado la UI básica, la lógica de selección, el feedback visual/auditivo y el avance de paso en `EstrellitaModeScreen.kt`. (COMPLETADO)
+*   **Trazado de Letras (Estrellita Mode):** La funcionalidad de trazado ha sido integrada en `EstrellitaModeScreen.kt` como un paso más en la lección. (COMPLETADO)
 
 ## 5. Próximos Pasos
 
-*   Comenzar la implementación del contenido de `EstrellitaModeScreen.kt` siguiendo el flujo propuesto en la sección 2.
+*   Avanzar a la "Fase 5: Construcción de Sílabas/Palabras" en `EstrellitaModeScreen.kt`.

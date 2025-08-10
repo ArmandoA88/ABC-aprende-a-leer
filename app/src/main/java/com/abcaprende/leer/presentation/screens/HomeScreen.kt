@@ -74,7 +74,7 @@ fun HomeScreen(
             // Selector de niveles - TODOS DESBLOQUEADOS
             LevelSelector(
                 currentLevel = appState.currentLevel,
-                unlockedLevels = listOf(1, 2, 3), // TODOS DESBLOQUEADOS
+                unlockedLevels = listOf(1, 2, 3, 4), // TODOS DESBLOQUEADOS, incluyendo Modo Estrellita
                 onLevelSelected = { level ->
                     viewModel.handleEvent(AppEvent.SelectLevel(level))
                 },
@@ -220,6 +220,19 @@ private fun LevelSelector(
                 isSelected = currentLevel == 3,
                 color = Level3Color,
                 onClick = { onLevelSelected(3) }
+            )
+
+            LevelButton(
+                level = 4,
+                title = "Modo Estrellita",
+                description = "Aprende con Estrellita",
+                isUnlocked = unlockedLevels.contains(4),
+                isSelected = currentLevel == 4,
+                color = Level4Color, // New color for Estrellita Mode
+                onClick = {
+                    onLevelSelected(4)
+                    navController.navigate("estrellita_mode") // Navigate to Estrellita Mode screen
+                }
             )
         }
     }
