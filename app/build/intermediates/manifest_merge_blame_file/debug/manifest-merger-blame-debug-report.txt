@@ -97,32 +97,32 @@
 56            </intent-filter>
 57        </activity>
 58        <activity
-58-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+58-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b9946ffacd8ee16b11d3b522a6881fac\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
 59            android:name="androidx.compose.ui.tooling.PreviewActivity"
-59-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+59-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b9946ffacd8ee16b11d3b522a6881fac\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
 60            android:exported="true" />
-60-->[androidx.compose.ui:ui-tooling-android:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\42b105f04cef79bbefb1bad51f309b6b\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+60-->[androidx.compose.ui:ui-tooling-android:1.6.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\b9946ffacd8ee16b11d3b522a6881fac\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
 61        <activity
-61-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:23:9-25:39
+61-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\7710ddf6806fe99daf16e9deb3309f0a\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:23:9-25:39
 62            android:name="androidx.activity.ComponentActivity"
-62-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:24:13-63
+62-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\7710ddf6806fe99daf16e9deb3309f0a\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:24:13-63
 63            android:exported="true" />
-63-->[androidx.compose.ui:ui-test-manifest:1.5.4] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\ed1bfcb3b3da9da5fca3699ffee9b608\transformed\ui-test-manifest-1.5.4\AndroidManifest.xml:25:13-36
+63-->[androidx.compose.ui:ui-test-manifest:1.6.5] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\7710ddf6806fe99daf16e9deb3309f0a\transformed\ui-test-manifest-1.6.5\AndroidManifest.xml:25:13-36
 64
 65        <provider
-65-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2c7a8d753b822d14f8cfffa96bf49ad5\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 66            android:name="androidx.startup.InitializationProvider"
-66-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+66-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2c7a8d753b822d14f8cfffa96bf49ad5\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 67            android:authorities="com.abcaprende.leer.androidx-startup"
-67-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+67-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2c7a8d753b822d14f8cfffa96bf49ad5\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 68            android:exported="false" >
-68-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2c7a8d753b822d14f8cfffa96bf49ad5\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 69            <meta-data
-69-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2c7a8d753b822d14f8cfffa96bf49ad5\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-70-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+70-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2c7a8d753b822d14f8cfffa96bf49ad5\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 71                android:value="androidx.startup" />
-71-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\a2cb60a024d012c6928464848ee0f59a\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+71-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\2c7a8d753b822d14f8cfffa96bf49ad5\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 72            <meta-data
 72-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Casa-Desktop\.gradle\caches\transforms-3\c16c207d5ae81be0cbbfd94647debad6\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
 73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"

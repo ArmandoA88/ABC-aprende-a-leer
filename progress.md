@@ -92,10 +92,10 @@ Se propone una nueva modalidad de juego que integre los principios de "Estrellit
 
 *   **Problema de Entorno (JDK/Gradle):** El proyecto está experimentando un error de compilación relacionado con la resolución de archivos JDK por parte de Gradle (`jlink.exe` error). Esto es un problema de configuración del entorno de desarrollo y no de código.
     *   **Solución Sugerida:** Asegurarse de que la versión de JDK configurada en el entorno (`JAVA_HOME`) sea compatible con la versión de Android Gradle Plugin (AGP) y el `compileSdk`. Se recomienda usar JDK 11 o JDK 17 para AGP 8.x. Si se está usando JDK 21, podría haber incompatibilidades con las herramientas de Android. Se puede intentar configurar el JDK en Android Studio o verificar la variable de entorno `JAVA_HOME`.
-*   Mejorar la "Fase 5: Construcción de Sílabas/Palabras" en `EstrellitaModeScreen.kt` para incluir:
-    *   Funcionalidad de arrastrar y soltar sílabas.
-    *   Validación de palabras formadas (ej. verificar si "MAMA" es una palabra válida).
-    *   Manejo de múltiples palabras objetivo.
-*   Implementar la "Fase 3: Implementación de Asociación Visual y Auditiva" con imágenes reales y lógica de selección.
+*   **Funcionalidad de arrastrar y soltar sílabas:** Implementada en `EstrellitaModeScreen.kt` utilizando `DragTarget` y `DropTarget` para la construcción de palabras. (COMPLETADO)
+*   **Validación de palabras formadas:** Implementada en `SyllableConstructionViewModel.kt` para verificar que la palabra formada es una palabra válida además de ser la palabra objetivo. (COMPLETADO)
+*   **Manejo de múltiples palabras objetivo:** Implementado en `SyllableConstructionViewModel.kt` con progresión a través de una lista de palabras objetivo. (COMPLETADO)
+*   **Validación de palabras formadas:** Implementada en `SyllableConstructionViewModel.kt` para verificar que la palabra formada es una palabra válida además de ser la palabra objetivo. (COMPLETADO)
+*   **Implementar la "Fase 3: Implementación de Asociación Visual y Auditiva" con imágenes reales y lógica de selección:** Actualizado `EstrellitaModeScreen.kt` para usar `imageResId` en `AssociationItem` y mostrar `Image` en `AssociationContent`. (COMPLETADO - Requiere que los recursos de imagen existan)
 *   Integrar el reconocimiento de trazos en la "Fase 4: Integración del Trazado Mejorado".
 *   Avanzar a la "Fase 6: Refuerzo Lúdico" si el tiempo lo permite.
