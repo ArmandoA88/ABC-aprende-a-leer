@@ -97,5 +97,5 @@ Se propone una nueva modalidad de juego que integre los principios de "Estrellit
 *   **Manejo de múltiples palabras objetivo:** Implementado en `SyllableConstructionViewModel.kt` con progresión a través de una lista de palabras objetivo. (COMPLETADO)
 *   **Validación de palabras formadas:** Implementada en `SyllableConstructionViewModel.kt` para verificar que la palabra formada es una palabra válida además de ser la palabra objetivo. (COMPLETADO)
 *   **Implementar la "Fase 3: Implementación de Asociación Visual y Auditiva" con imágenes reales y lógica de selección:** Actualizado `EstrellitaModeScreen.kt` para usar `imageResId` en `AssociationItem` y mostrar `Image` en `AssociationContent`. (COMPLETADO - Requiere que los recursos de imagen existan)
-*   Integrar el reconocimiento de trazos en la "Fase 4: Integración del Trazado Mejorado".
+*   **Integrar el reconocimiento de trazos en la "Fase 4: Integración del Trazado Mejorado":** Implementada una lógica básica de reconocimiento de trazos en `EstrellitaTracingContent.kt` que detecta si se ha realizado un trazo suficiente y avanza automáticamente a la siguiente fase en `EstrellitaModeScreen.kt`. (COMPLETADO - Implementación básica)
 *   Avanzar a la "Fase 6: Refuerzo Lúdico" si el tiempo lo permite.

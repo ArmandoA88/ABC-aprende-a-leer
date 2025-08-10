@@ -150,7 +150,15 @@ fun EstrellitaModeScreen(navController: NavController) {
                     )
                 }
                 EstrellitaStep.TRACING -> {
-                    EstrellitaTracingContent(letter = currentLetter.value, ttsService = ttsService)
+                    EstrellitaTracingContent(
+                        letter = currentLetter.value,
+                        ttsService = ttsService,
+                        onTracingComplete = {
+                            if (it) { // If tracing is complete
+                                currentStep = EstrellitaStep.SYLLABLE_CONSTRUCTION
+                            }
+                        }
+                    )
                 }
                 EstrellitaStep.SYLLABLE_CONSTRUCTION -> {
                     SyllableConstructionContent(ttsService = ttsService)
@@ -176,7 +184,7 @@ fun EstrellitaModeScreen(navController: NavController) {
                         EstrellitaStep.TRACING -> EstrellitaStep.SYLLABLE_CONSTRUCTION
                         EstrellitaStep.SYLLABLE_CONSTRUCTION -> EstrellitaStep.INTRODUCTION // Loop for now
                     }
-                }) {
+                }, enabled = currentStep != EstrellitaStep.TRACING) { // Disable "Siguiente" button during tracing
                     Text("Siguiente")
                 }
             }

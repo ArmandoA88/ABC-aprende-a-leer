@@ -26,15 +26,28 @@ import androidx.compose.ui.unit.Constraints
 import com.abcaprende.leer.services.TTSService
 
 @Composable
-fun EstrellitaTracingContent(letter: String, ttsService: TTSService, clearPathsTrigger: Boolean = false, onPathsCleared: () -> Unit = {}) {
+fun EstrellitaTracingContent(
+    letter: String,
+    ttsService: TTSService,
+    clearPathsTrigger: Boolean = false,
+    onPathsCleared: () -> Unit = {},
+    onTracingComplete: (Boolean) -> Unit = {} // New callback for tracing completion
+) {
     val paths = remember { mutableStateListOf<Path>() }
     var currentPath by remember { mutableStateOf(Path()) }
+    var isTracingComplete by remember { mutableStateOf(false) } // New state for completion
+    val minPointsForRecognition = 50 // Minimum points to consider a trace "complete"
 
-    // Clear paths when trigger is true
-    LaunchedEffect(clearPathsTrigger) {
+    // Reset completion state and clear paths when letter changes or clearPathsTrigger is true
+    LaunchedEffect(letter, clearPathsTrigger) {
         if (clearPathsTrigger) {
             paths.clear()
+            isTracingComplete = false // Reset completion state
             onPathsCleared()
+        } else if (isTracingComplete) {
+            // If letter changes and tracing was complete, reset for new letter
+            isTracingComplete = false
+            paths.clear()
         }
     }
 
@@ -75,7 +88,13 @@ fun EstrellitaTracingContent(letter: String, ttsService: TTSService, clearPathsT
                                 paths.add(currentPath)
                             },
                             onDragEnd = {
-                                // Optionally, you can process the path here (e.g., for recognition)
+                                // Basic recognition: check if the path has enough points
+                                if (currentPath.getBounds().width > 0 && currentPath.getBounds().height > 0 && paths.last().getBounds().width > 0 && paths.last().getBounds().height > 0) {
+                                    // A more sophisticated check would involve comparing the drawn path to the letter's shape
+                                    // For now, we'll consider it complete if a path was drawn
+                                    isTracingComplete = true
+                                    onTracingComplete(true)
+                                }
                             },
                             onDrag = { change, dragAmount ->
                                 change.consume()
@@ -118,8 +137,22 @@ fun EstrellitaTracingContent(letter: String, ttsService: TTSService, clearPathsT
 
             Spacer(modifier = Modifier.height(16.dp))
 
+            if (isTracingComplete) {
+                Text(
+                    text = "¡Excelente! Letra trazada.",
+                    style = MaterialTheme.typography.titleLarge.copy(
+                        color = Color.Green,
+                        fontWeight = FontWeight.Bold
+                    ),
+                    modifier = Modifier.padding(bottom = 8.dp)
+                )
+            }
+
             Button(
-                onClick = { paths.clear() },
+                onClick = {
+                    paths.clear()
+                    isTracingComplete = false // Allow re-tracing
+                },
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(50.dp),
