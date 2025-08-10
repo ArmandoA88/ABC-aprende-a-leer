@@ -21,6 +21,7 @@ import com.abcaprende.leer.presentation.screens.HomeScreen
 import com.abcaprende.leer.presentation.screens.VowelSelectionScreen
 import com.abcaprende.leer.presentation.screens.VowelLearningScreen
 import com.abcaprende.leer.presentation.screens.TracingScreen
+import com.abcaprende.leer.presentation.screens.EstrellitaModeScreen // Import EstrellitaModeScreen
 import com.abcaprende.leer.presentation.viewmodels.MainViewModel
 import com.abcaprende.leer.ui.theme.ABCAprendeTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -80,6 +81,11 @@ fun ABCAprendeApp() {
             TracingScreen(navController = navController)
         }
         
+        // New Estrellita Mode Screen
+        composable("estrellita_mode") {
+            EstrellitaModeScreen(navController = navController)
+        }
+
         composable("letter_activity/{letter}") {
             ComingSoonScreen(navController = navController, title = "Actividad de Letra")
         }

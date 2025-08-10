@@ -76,7 +76,7 @@ fun VowelSelectionScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             // Header
-            VowelSelectionHeader(titleScale = titleScale)
+            VowelSelectionHeader(titleScale = titleScale, navController = navController) // Pass navController
             
             Spacer(modifier = Modifier.height(32.dp))
             
@@ -108,7 +108,7 @@ fun VowelSelectionScreen(
 }
 
 @Composable
-private fun VowelSelectionHeader(titleScale: Float) {
+private fun VowelSelectionHeader(titleScale: Float, navController: NavController) { // Add navController
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.padding(top = 16.dp)
@@ -126,58 +126,88 @@ private fun VowelSelectionHeader(titleScale: Float) {
         Spacer(modifier = Modifier.height(16.dp))
         
         // Nivel 1 card
-        Card(
+        LevelCard(
+            level = 1,
+            title = "Escucha y Repite",
+            subtitle = "Vocales",
+            levelColor = Level1Color,
+            onClick = { /* No specific action for Level 1 card itself, handled by vowel cards */ }
+        )
+
+        Spacer(modifier = Modifier.height(16.dp)) // Spacer between Level 1 and Level 4
+
+        // Nivel 4 card for Estrellita Mode
+        LevelCard(
+            level = 4,
+            title = "Modo Estrellita",
+            subtitle = "Aprende Letras y Sílabas",
+            levelColor = Level4Color, // Define Level4Color in theme or use a new color
+            onClick = { navController.navigate("estrellita_mode") }
+        )
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun LevelCard(
+    level: Int,
+    title: String,
+    subtitle: String,
+    levelColor: Color,
+    onClick: () -> Unit
+) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(80.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = levelColor.copy(alpha = 0.3f)
+        ),
+        shape = RoundedCornerShape(16.dp),
+        onClick = onClick // Make the card clickable
+    ) {
+        Row(
             modifier = Modifier
-                .fillMaxWidth()
-                .height(80.dp),
-            colors = CardDefaults.cardColors(
-                containerColor = Level1Color.copy(alpha = 0.3f)
-            ),
-            shape = RoundedCornerShape(16.dp)
+                .fillMaxSize()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Row(
+            // Número del nivel
+            Box(
                 modifier = Modifier
-                    .fillMaxSize()
-                    .padding(16.dp),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                // Número del nivel
-                Box(
-                    modifier = Modifier
-                        .size(48.dp)
-                        .background(
-                            color = Level1Color,
-                            shape = CircleShape
-                        ),
+                    .size(48.dp)
+                    .background(
+                        color = levelColor,
+                        shape = CircleShape
+                    ),
                     contentAlignment = Alignment.Center
-                ) {
-                    Text(
-                        text = "1",
-                        style = MaterialTheme.typography.headlineSmall.copy(
-                            color = Color.White,
-                            fontWeight = FontWeight.Bold
-                        )
+            ) {
+                Text(
+                    text = level.toString(),
+                    style = MaterialTheme.typography.headlineSmall.copy(
+                        color = Color.White,
+                        fontWeight = FontWeight.Bold
                     )
-                }
-                
-                Spacer(modifier = Modifier.width(16.dp))
-                
-                // Información del nivel
-                Column {
-                    Text(
-                        text = "Escucha y Repite",
-                        style = MaterialTheme.typography.titleMedium.copy(
-                            color = Color.White,
-                            fontWeight = FontWeight.Bold
-                        )
+                )
+            }
+            
+            Spacer(modifier = Modifier.width(16.dp))
+            
+            // Información del nivel
+            Column {
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.titleMedium.copy(
+                        color = Color.White,
+                        fontWeight = FontWeight.Bold
                     )
-                    Text(
-                        text = "Vocales",
-                        style = MaterialTheme.typography.bodyMedium.copy(
-                            color = Color.White.copy(alpha = 0.9f)
-                        )
+                )
+                Text(
+                    text = subtitle,
+                    style = MaterialTheme.typography.bodyMedium.copy(
+                        color = Color.White.copy(alpha = 0.9f)
                     )
-                }
+                )
             }
         }
     }

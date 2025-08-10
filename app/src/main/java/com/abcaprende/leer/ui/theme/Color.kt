@@ -41,6 +41,7 @@ val StarBronze = Color(0xFFCD7F32)
 val Level1Color = Color(0xFF4CAF50) // Verde para vocales
 val Level2Color = Color(0xFF2196F3) // Azul para consonantes
 val Level3Color = Color(0xFF9C27B0) // Púrpura para palabras
+val Level4Color = Color(0xFFFF9800) // Naranja para Modo Estrellita
 
 // Colores para actividades
 val TraceColor = Color(0xFF4CAF50)

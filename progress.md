@@ -1,0 +1,87 @@
+# Progreso de Implementación del Programa Estrellita
+
+Este documento detalla el progreso en la implementación de una nueva modalidad de juego inspirada en la metodología "Estrellita" para la aplicación ABC Aprende a Leer.
+
+## 1. Entendimiento del Programa Estrellita
+
+El programa "Estrellita" es una metodología acelerada de lectura en español para niños principiantes (4-6 años), enfocada en fonética y conciencia fonémica.
+
+**Elementos Clave de una Lección Estrellita:**
+*   **Introducción del sonido y la letra:** Presentación de la letra con un personaje asociado, canción fonética y repetición del sonido.
+*   **Asociación visual y auditiva:** Relacionar el sonido con palabras e imágenes que empiezan con la letra.
+*   **Escritura y motricidad:** Reforzar el trazo de la letra (mayúscula y minúscula) usando diferentes medios.
+*   **Segmentación y combinación de sílabas:** Construcción de palabras simples a partir de sílabas.
+*   **Canción o juego de cierre:** Refuerzo lúdico del sonido aprendido.
+
+**Principios del Método:**
+*   Mucho apoyo visual y auditivo.
+*   Repetición diaria.
+*   Vinculación emocional (personajes).
+*   Progresión rápida.
+
+## 2. Propuesta de Nueva Modalidad de Juego (Estrellita Mode)
+
+Se propone una nueva modalidad de juego que integre los principios de "Estrellita" en el "Nivel 4" de la aplicación. Esta modalidad se centrará en la introducción de nuevas letras (consonantes, ya que el Nivel 2 de trazado era de consonantes) y su asociación con sonidos, palabras y trazado.
+
+**Flujo Propuesto para el "Modo Estrellita" (Nivel 4):**
+
+1.  **Selección de Letra/Sonido:** El niño selecciona una letra para aprender (o se le presenta una nueva letra en secuencia).
+2.  **Introducción Fonética:**
+    *   La letra se muestra prominentemente.
+    *   Se reproduce el sonido de la letra (TTS).
+    *   Se reproduce una "canción fonética" o frase corta asociada a la letra (ej. "M... mmm mamá").
+    *   Se muestra una imagen de un personaje/objeto asociado a la letra.
+3.  **Asociación Visual y Auditiva:**
+    *   Se presentan varias imágenes/palabras, algunas que empiezan con la letra aprendida y otras no.
+    *   El niño debe identificar las que empiezan con el sonido correcto (interacción táctil).
+    *   Feedback auditivo y visual.
+4.  **Trazado de la Letra:**
+    *   Se utiliza la funcionalidad de trazado existente (mejorada) para que el niño practique la escritura de la letra (mayúscula y minúscula).
+    *   Feedback visual sobre la precisión del trazo (futura implementación de reconocimiento).
+5.  **Construcción de Sílabas/Palabras (Simplificado):**
+    *   Se presentan sílabas relacionadas con la letra (ej. MA, ME, MI, MO, MU).
+    *   El niño puede arrastrar y soltar sílabas para formar palabras simples (ej. MA-MÁ).
+    *   Reproducción de la palabra formada (TTS).
+6.  **Refuerzo Lúdico (Opcional/Futuro):**
+    *   Un mini-juego o actividad corta para reforzar el aprendizaje.
+
+## 3. Plan de Implementación
+
+**Fase 1: Preparación y Estructura**
+*   Crear este archivo `progress.md`. (COMPLETADO)
+*   Identificar los puntos de integración para el "Nivel 4" en la aplicación (e.g., `VowelSelectionScreen.kt`, `MainViewModel.kt`). (COMPLETADO - Análisis de `MainViewModel.kt` y `VowelSelectionScreen.kt` realizado)
+*   **Decisión:** Se añadió una nueva tarjeta de "Nivel 4" en `VowelSelectionScreen.kt` que navega a una nueva pantalla `EstrellitaModeScreen.kt`. (COMPLETADO)
+*   Definir `Level4Color` en `Color.kt`. (COMPLETADO)
+*   Crear el archivo `EstrellitaModeScreen.kt` (inicialmente vacío o con un placeholder). (COMPLETADO)
+*   Añadir la ruta `"estrellita_mode"` al gráfico de navegación en `MainActivity.kt`. (COMPLETADO)
+*   Resolver el error de compatibilidad de Gradle/Java. (COMPLETADO)
+
+**Fase 2: Implementación de la Introducción Fonética**
+*   Modificar `TracingScreen.kt` o crear una nueva pantalla para la "Introducción Fonética".
+*   Integrar la reproducción de sonidos/frases asociadas a la letra.
+*   Mostrar imágenes asociadas a la letra.
+
+**Fase 3: Implementación de Asociación Visual y Auditiva**
+*   Desarrollar la UI para la selección de imágenes/palabras.
+*   Implementar la lógica de identificación y feedback.
+
+**Fase 4: Integración del Trazado Mejorado**
+*   Asegurar que la funcionalidad de trazado actual se integre fluidamente en el nuevo flujo.
+*   (Futuro) Implementar el reconocimiento de trazos.
+
+**Fase 5: Construcción de Sílabas/Palabras**
+*   Diseñar la UI para la manipulación de sílabas.
+*   Implementar la lógica de formación de palabras y TTS.
+
+**Fase 6: Refuerzo Lúdico (Si el tiempo lo permite)**
+*   Diseñar e implementar un mini-juego simple.
+
+## 4. Progreso Actual
+
+*   **Trazado de Letras:** La funcionalidad de trazado en `TracingScreen.kt` ha sido mejorada para ser más responsiva y precisa, y las letras guía son más grandes. (COMPLETADO)
+*   **Sonido de Letras:** La pronunciación de las letras vía TTS está integrada en `TracingScreen.kt`. (COMPLETADO)
+*   **Estructura de Nivel 4 (Modo Estrellita):** Se ha creado la estructura básica para integrar el "Modo Estrellita" como un nuevo nivel en la aplicación, incluyendo la tarjeta de selección de nivel y la navegación a una pantalla placeholder. (COMPLETADO)
+
+## 5. Próximos Pasos
+
+*   Comenzar la implementación del contenido de `EstrellitaModeScreen.kt` siguiendo el flujo propuesto en la sección 2.
