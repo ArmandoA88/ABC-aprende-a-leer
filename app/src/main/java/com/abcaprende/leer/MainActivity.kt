@@ -18,6 +18,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.abcaprende.leer.presentation.screens.HomeScreen
+import com.abcaprende.leer.presentation.screens.VowelSelectionScreen
+import com.abcaprende.leer.presentation.screens.VowelLearningScreen
 import com.abcaprende.leer.presentation.viewmodels.MainViewModel
 import com.abcaprende.leer.ui.theme.ABCAprendeTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -58,9 +60,18 @@ fun ABCAprendeApp() {
             )
         }
         
-        // Pantallas temporales - mostrar mensaje de "Próximamente"
+        // Pantalla de selección de vocales
         composable("letter_selection") {
-            ComingSoonScreen(navController = navController, title = "Selección de Letras")
+            VowelSelectionScreen(navController = navController)
+        }
+        
+        // Pantalla de aprendizaje de vocal específica
+        composable("vowel_activity/{vowel}") { backStackEntry ->
+            val vowel = backStackEntry.arguments?.getString("vowel") ?: ""
+            VowelLearningScreen(
+                navController = navController,
+                vowel = vowel
+            )
         }
         
         composable("letter_activity/{letter}") {

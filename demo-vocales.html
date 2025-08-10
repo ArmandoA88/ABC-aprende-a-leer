@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Aprende a Leer - Demo Vocales</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .phone-container {
+            width: 350px;
+            height: 600px;
+            background: #000;
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .screen {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 20px;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .screen.active {
+            display: flex;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .level-card {
+            background: rgba(76, 175, 80, 0.3);
+            border: 2px solid #4CAF50;
+            border-radius: 15px;
+            padding: 15px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .level-number {
+            width: 40px;
+            height: 40px;
+            background: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+
+        .level-info h3 {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .level-info p {
+            color: rgba(255,255,255,0.9);
+            font-size: 14px;
+        }
+
+        .vowels-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            width: 100%;
+            flex: 1;
+            align-content: start;
+        }
+
+        .vowel-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .vowel-card:hover {
+            transform: scale(0.95);
+        }
+
+        .vowel-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .vowel-a { background: #E53E3E; }
+        .vowel-e { background: #38A169; }
+        .vowel-i { background: #3182CE; }
+        .vowel-o { background: #D69E2E; }
+        .vowel-u { background: #805AD5; }
+
+        .vowel-sound {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .back-button {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            border-radius: 25px;
+            padding: 15px 30px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Pantalla "Próximamente" */
+        .coming-soon {
+            background: white;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .construction-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .coming-soon h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .coming-soon p {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .purple-button {
+            background: linear-gradient(45deg, #9C27B0, #673AB7);
+            border: none;
+            border-radius: 25px;
+            padding: 15px 40px;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .controls {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .nav-button {
+            background: rgba(255,255,255,0.2);
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .nav-button:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .demo-title {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .demo-description {
+            color: rgba(255,255,255,0.9);
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="demo-title">🎯 ABC Aprende a Leer - Demo Vocales</h1>
+    <p class="demo-description">
+        Demostración de las pantallas de selección de niveles con vocales. 
+        Navega entre las pantallas usando los botones de abajo.
+    </p>
+
+    <div class="phone-container">
+        <!-- Pantalla 1: Selección de Vocales -->
+        <div class="screen active" id="vowel-selection">
+            <div class="header">
+                <h1 class="title">Elige tu nivel</h1>
+                <div class="level-card">
+                    <div class="level-number">1</div>
+                    <div class="level-info">
+                        <h3>Escucha y Repite</h3>
+                        <p>Vocales</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vowels-grid">
+                <div class="vowel-card" onclick="showVowelActivity('A')">
+                    <div class="vowel-circle vowel-a">A</div>
+                    <div class="vowel-sound" style="color: #E53E3E;">a</div>
+                </div>
+                <div class="vowel-card" onclick="showVowelActivity('E')">
+                    <div class="vowel-circle vowel-e">E</div>
+                    <div class="vowel-sound" style="color: #38A169;">e</div>
+                </div>
+                <div class="vowel-card" onclick="showVowelActivity('I')">
+                    <div class="vowel-circle vowel-i">I</div>
+                    <div class="vowel-sound" style="color: #3182CE;">i</div>
+                </div>
+                <div class="vowel-card" onclick="showVowelActivity('O')">
+                    <div class="vowel-circle vowel-o">O</div>
+                    <div class="vowel-sound" style="color: #D69E2E;">o</div>
+                </div>
+                <div class="vowel-card" onclick="showVowelActivity('U')">
+                    <div class="vowel-circle vowel-u">U</div>
+                    <div class="vowel-sound" style="color: #805AD5;">u</div>
+                </div>
+            </div>
+
+            <button class="back-button" onclick="alert('Volver al menú principal')">
+                Volver
+            </button>
+        </div>
+
+        <!-- Pantalla 2: Próximamente -->
+        <div class="screen coming-soon" id="coming-soon">
+            <div class="construction-icon">🚧</div>
+            <h2>Selección de Letras</h2>
+            <p>Próximamente</p>
+            <p style="color: #4CAF50; font-weight: bold;" id="selected-vowel"></p>
+            <button class="purple-button" onclick="showVowelSelection()">
+                Volver
+            </button>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="nav-button" onclick="showVowelSelection()">
+            📱 Selección de Vocales
+        </button>
+        <button class="nav-button" onclick="showComingSoon('Ejemplo')">
+            🚧 Próximamente
+        </button>
+    </div>
+
+    <script>
+        function showVowelSelection() {
+            document.getElementById('vowel-selection').classList.add('active');
+            document.getElementById('coming-soon').classList.remove('active');
+        }
+
+        function showVowelActivity(vowel) {
+            document.getElementById('selected-vowel').textContent = `Vocal seleccionada: ${vowel}`;
+            showComingSoon();
+        }
+
+        function showComingSoon(vowel = '') {
+            document.getElementById('vowel-selection').classList.remove('active');
+            document.getElementById('coming-soon').classList.add('active');
+            if (vowel) {
+                document.getElementById('selected-vowel').textContent = `Vocal: ${vowel}`;
+            }
+        }
+
+        // Animación inicial
+        setTimeout(() => {
+            document.querySelector('.phone-container').style.transform = 'scale(1)';
+        }, 100);
+    </script>
+</body>
+</html>
