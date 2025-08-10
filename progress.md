@@ -70,8 +70,8 @@ Se propone una nueva modalidad de juego que integre los principios de "Estrellit
 *   (Futuro) Implementar el reconocimiento de trazos. (PENDIENTE)
 
 **Fase 5: Construcción de Sílabas/Palabras**
-*   Diseñar la UI para la manipulación de sílabas.
-*   Implementar la lógica de formación de palabras y TTS.
+*   Diseñar la UI para la manipulación de sílabas. (COMPLETADO - Implementación inicial en `EstrellitaModeScreen.kt` con selección de sílabas)
+*   Implementar la lógica de formación de palabras y TTS. (COMPLETADO - Lógica básica de concatenación y reproducción TTS)
 
 **Fase 6: Refuerzo Lúdico (Si el tiempo lo permite)**
 *   Diseñar e implementar un mini-juego simple.
@@ -84,7 +84,18 @@ Se propone una nueva modalidad de juego que integre los principios de "Estrellit
 *   **Introducción Fonética (Estrellita Mode):** Implementación inicial de la pantalla `EstrellitaModeScreen.kt` con visualización de letras, pronunciación TTS y un placeholder para imágenes asociadas. (COMPLETADO)
 *   **Asociación Visual y Auditiva (Estrellita Mode):** Se ha implementado la UI básica, la lógica de selección, el feedback visual/auditivo y el avance de paso en `EstrellitaModeScreen.kt`. (COMPLETADO)
 *   **Trazado de Letras (Estrellita Mode):** La funcionalidad de trazado ha sido integrada en `EstrellitaModeScreen.kt` como un paso más en la lección. (COMPLETADO)
+*   **Construcción de Sílabas/Palabras (Estrellita Mode):** Implementación inicial de la UI para la selección de sílabas y formación de palabras, con reproducción TTS de la palabra formada. (COMPLETADO)
+*   **Correcciones de Compilación:** Se han abordado todos los errores de compilación relacionados con el código Kotlin y las dependencias, incluyendo la configuración de Java 8 y la corrección de importaciones. Se ha eliminado el uso de `FlowRow` y la dependencia `accompanist` para evitar problemas de compatibilidad y advertencias de API experimental. (COMPLETADO)
+*   **Configuración TTS:** Se ha configurado el servicio TTS para priorizar el español de México. (COMPLETADO)
 
 ## 5. Próximos Pasos
 
-*   Avanzar a la "Fase 5: Construcción de Sílabas/Palabras" en `EstrellitaModeScreen.kt`.
+*   **Problema de Entorno (JDK/Gradle):** El proyecto está experimentando un error de compilación relacionado con la resolución de archivos JDK por parte de Gradle (`jlink.exe` error). Esto es un problema de configuración del entorno de desarrollo y no de código.
+    *   **Solución Sugerida:** Asegurarse de que la versión de JDK configurada en el entorno (`JAVA_HOME`) sea compatible con la versión de Android Gradle Plugin (AGP) y el `compileSdk`. Se recomienda usar JDK 11 o JDK 17 para AGP 8.x. Si se está usando JDK 21, podría haber incompatibilidades con las herramientas de Android. Se puede intentar configurar el JDK en Android Studio o verificar la variable de entorno `JAVA_HOME`.
+*   Mejorar la "Fase 5: Construcción de Sílabas/Palabras" en `EstrellitaModeScreen.kt` para incluir:
+    *   Funcionalidad de arrastrar y soltar sílabas.
+    *   Validación de palabras formadas (ej. verificar si "MAMA" es una palabra válida).
+    *   Manejo de múltiples palabras objetivo.
+*   Implementar la "Fase 3: Implementación de Asociación Visual y Auditiva" con imágenes reales y lógica de selección.
+*   Integrar el reconocimiento de trazos en la "Fase 4: Integración del Trazado Mejorado".
+*   Avanzar a la "Fase 6: Refuerzo Lúdico" si el tiempo lo permite.

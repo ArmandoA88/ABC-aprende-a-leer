@@ -21,9 +21,10 @@ class TTSService @Inject constructor(
     suspend fun initialize(): Boolean = suspendCancellableCoroutine { continuation ->
         tts = TextToSpeech(context) { status ->
             if (status == TextToSpeech.SUCCESS) {
-                val result = tts?.setLanguage(Locale("es", "ES"))
-                    ?: tts?.setLanguage(Locale("es", "MX"))
+                // Prioritize Mexican Spanish, then generic Spanish, then Spanish (Spain)
+                val result = tts?.setLanguage(Locale("es", "MX"))
                     ?: tts?.setLanguage(Locale("es"))
+                    ?: tts?.setLanguage(Locale("es", "ES"))
                 
                 if (result == TextToSpeech.LANG_MISSING_DATA || 
                     result == TextToSpeech.LANG_NOT_SUPPORTED) {
