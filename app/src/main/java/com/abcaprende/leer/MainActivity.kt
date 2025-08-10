@@ -72,7 +72,15 @@ fun ABCAprendeApp() {
             val vowel = backStackEntry.arguments?.getString("vowel") ?: ""
             VowelLearningScreen(
                 navController = navController,
-                vowel = vowel
+                initialVowel = vowel // Renamed parameter for clarity
+            )
+        }
+        
+        // Nueva pantalla para el aprendizaje secuencial de vocales
+        composable("vowel_learning_sequence") {
+            VowelLearningScreen(
+                navController = navController,
+                initialVowel = null // Indicate that it should start from the beginning of the sequence
             )
         }
         

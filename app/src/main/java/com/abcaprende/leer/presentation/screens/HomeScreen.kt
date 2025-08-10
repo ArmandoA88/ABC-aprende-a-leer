@@ -85,7 +85,7 @@ fun HomeScreen(
             MainButtons(
                 onStartLearning = {
                     viewModel.handleEvent(AppEvent.StartLearning)
-                    navController.navigate("letter_selection")
+                    // Removed direct navigation to letter_selection as Level 1 now handles vowel sequence
                 },
                 onOpenParentPanel = {
                     viewModel.handleEvent(AppEvent.OpenParentPanel)
@@ -195,7 +195,10 @@ private fun LevelSelector(
                 isUnlocked = unlockedLevels.contains(1),
                 isSelected = currentLevel == 1,
                 color = Level1Color,
-                onClick = { onLevelSelected(1) }
+                onClick = {
+                    onLevelSelected(1)
+                    navController.navigate("vowel_learning_sequence")
+                }
             )
             
             LevelButton(

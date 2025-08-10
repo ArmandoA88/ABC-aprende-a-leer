@@ -22,6 +22,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
@@ -29,19 +30,38 @@ import androidx.navigation.compose.rememberNavController
 import com.abcaprende.leer.presentation.viewmodels.VowelLearningViewModel
 import com.abcaprende.leer.presentation.viewmodels.FeedbackType
 import com.abcaprende.leer.ui.theme.*
+import android.widget.Toast // Import Toast
+import androidx.compose.foundation.gestures.detectTapGestures // Import detectTapGestures
+import androidx.compose.ui.input.pointer.pointerInput // Import pointerInput
 
 @Composable
 fun VowelLearningScreen(
     navController: NavController,
-    vowel: String,
+    initialVowel: String?, // Changed parameter to be nullable
     viewModel: VowelLearningViewModel = hiltViewModel()
 ) {
     val state by viewModel.state.collectAsState()
     var animationStarted by remember { mutableStateOf(false) }
-    
-    LaunchedEffect(vowel) {
-        viewModel.setCurrentVowel(vowel)
+    val context = LocalContext.current // Get context for Toast
+
+    // Vowels sequence
+    val vowels = remember { listOf("A", "E", "I", "O", "U") }
+    var currentVowelIndex by remember { mutableStateOf(0) }
+
+    LaunchedEffect(initialVowel) {
+        if (initialVowel != null) {
+            val index = vowels.indexOf(initialVowel.uppercase())
+            if (index != -1) {
+                currentVowelIndex = index
+            }
+        }
+        viewModel.setCurrentVowel(vowels[currentVowelIndex])
         animationStarted = true
+    }
+
+    // Show "double-click" message on first load
+    LaunchedEffect(Unit) {
+        Toast.makeText(context, "Puedes avanzar a la siguiente vocal con doble clic en la vocal actual.", Toast.LENGTH_LONG).show()
     }
     
     val vowelScale by animateFloatAsState(
@@ -89,7 +109,8 @@ fun VowelLearningScreen(
                 isPlaying = state.isPlaying,
                 isListening = state.isListening,
                 scale = vowelScale,
-                onPlaySound = { viewModel.playVowelSound() }
+                onPlaySound = { viewModel.playVowelSound() },
+                onDoubleClick = { viewModel.nextVowel() } // Pass the nextVowel function
             )
             
             Spacer(modifier = Modifier.height(30.dp))
@@ -669,7 +690,8 @@ private fun BigVowelDisplay(
     isPlaying: Boolean,
     isListening: Boolean,
     scale: Float,
-    onPlaySound: () -> Unit
+    onPlaySound: () -> Unit,
+    onDoubleClick: () -> Unit // Add onDoubleClick parameter
 ) {
     val vowelColor = getVowelColor(vowel)
     
@@ -677,7 +699,13 @@ private fun BigVowelDisplay(
         onClick = onPlaySound,
         modifier = Modifier
             .size(280.dp) // MÁS GRANDE para niños pequeños
-            .scale(scale),
+            .scale(scale)
+            .pointerInput(Unit) { // Add pointerInput for double-tap
+                detectTapGestures(
+                    onTap = { onPlaySound() },
+                    onDoubleTap = { onDoubleClick() }
+                )
+            },
         colors = CardDefaults.cardColors(
             containerColor = Color.White
         ),
@@ -853,7 +881,7 @@ fun VowelLearningScreenPreview() {
     ABCAprendeTheme {
         VowelLearningScreen(
             navController = rememberNavController(),
-            vowel = "A"
+            initialVowel = "A" // Changed parameter name
         )
     }
 }
