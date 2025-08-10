@@ -105,3 +105,5 @@ lint-results*.xml
 
 # Android Profiling
 *.hprof
+
+.fake

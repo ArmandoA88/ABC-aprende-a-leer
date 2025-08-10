@@ -22,15 +22,10 @@
     <application
         android:name=".ABCAprendeApplication"
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ABCAprende"
-        android:hardwareAccelerated="true"
-        tools:targetApi="31">
+        android:hardwareAccelerated="true">
         
         <activity
             android:name=".MainActivity"
@@ -45,28 +40,6 @@
             </intent-filter>
         </activity>
 
-        <!-- Servicio para TTS -->
-        <service
-            android:name=".services.TTSService"
-            android:enabled="true"
-            android:exported="false" />
-
-        <!-- Servicio para reconocimiento de voz -->
-        <service
-            android:name=".services.VoiceRecognitionService"
-            android:enabled="true"
-            android:exported="false" />
-
-        <!-- Provider para compartir archivos -->
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths" />
-        </provider>
 
     </application>
 

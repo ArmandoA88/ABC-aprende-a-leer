@@ -85,17 +85,13 @@
     <string name="very_good">¡Muy bien!</string>
     <string name="voice_title">Di la palabra: %1$s</string>
     <string name="yes">Sí</string>
-    <style name="Theme.ABCAprende" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.ABCAprende" parent="Theme.AppCompat.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
         
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-        
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryDark</item>
         
         <item name="android:windowFullscreen">false</item>
         <item name="android:windowContentOverlay">@null</item>

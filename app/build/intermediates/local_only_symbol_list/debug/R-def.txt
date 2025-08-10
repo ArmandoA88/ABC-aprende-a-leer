@@ -25,6 +25,7 @@ color trace_color
 color voice_color
 color warning_orange
 color white
+layout activity_main
 string accuracy_rate
 string app_description
 string app_name
@@ -86,3 +87,6 @@ string very_good
 string voice_title
 string yes
 style Theme.ABCAprende
+xml backup_rules
+xml data_extraction_rules
+xml file_paths
