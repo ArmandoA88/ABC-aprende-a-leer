@@ -74,7 +74,7 @@ fun HomeScreen(
             // Selector de niveles - TODOS DESBLOQUEADOS
             LevelSelector(
                 currentLevel = appState.currentLevel,
-                unlockedLevels = listOf(1, 2, 3, 4), // TODOS DESBLOQUEADOS, incluyendo Modo Estrellita
+                unlockedLevels = listOf(1, 2, 3, 4, 5), // TODOS DESBLOQUEADOS, incluyendo Modo Estrellita y el nuevo nivel
                 onLevelSelected = { level ->
                     viewModel.handleEvent(AppEvent.SelectLevel(level))
                 },
@@ -203,12 +203,25 @@ private fun LevelSelector(
             
             LevelButton(
                 level = 2,
-                title = "Reconoce y Traza",
+                title = "Escucha y Repite",
                 description = "Consonantes",
                 isUnlocked = unlockedLevels.contains(2),
                 isSelected = currentLevel == 2,
                 color = Level2Color,
-                onClick = { onLevelSelected(2) },
+                onClick = {
+                    onLevelSelected(2)
+                    navController.navigate("consonant_activity_sequence")
+                }
+            )
+            
+            LevelButton(
+                level = 3,
+                title = "Reconoce y Traza",
+                description = "Consonantes",
+                isUnlocked = unlockedLevels.contains(3),
+                isSelected = currentLevel == 3,
+                color = Level3Color, // Changed to Level3Color
+                onClick = { onLevelSelected(3) },
                 onDoubleClick = { 
                     // Navegar directamente al nivel de trazado
                     navController.navigate("tracing")
@@ -216,24 +229,24 @@ private fun LevelSelector(
             )
             
             LevelButton(
-                level = 3,
+                level = 4,
                 title = "Forma Palabras",
                 description = "Sílabas",
-                isUnlocked = unlockedLevels.contains(3),
-                isSelected = currentLevel == 3,
-                color = Level3Color,
-                onClick = { onLevelSelected(3) }
+                isUnlocked = unlockedLevels.contains(4),
+                isSelected = currentLevel == 4,
+                color = Level4Color, // Changed to Level4Color
+                onClick = { onLevelSelected(4) }
             )
 
             LevelButton(
-                level = 4,
+                level = 5, // New level number
                 title = "Modo Estrellita",
                 description = "Aprende con Estrellita",
-                isUnlocked = unlockedLevels.contains(4),
-                isSelected = currentLevel == 4,
-                color = Level4Color, // New color for Estrellita Mode
+                isUnlocked = unlockedLevels.contains(5), // New level number
+                isSelected = currentLevel == 5, // New level number
+                color = Level5Color, // Assuming a new color for Level 5
                 onClick = {
-                    onLevelSelected(4)
+                    onLevelSelected(5) // New level number
                     navController.navigate("estrellita_mode") // Navigate to Estrellita Mode screen
                 }
             )

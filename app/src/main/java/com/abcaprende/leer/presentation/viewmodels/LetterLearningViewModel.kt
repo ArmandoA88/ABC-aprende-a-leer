@@ -10,6 +10,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import com.abcaprende.leer.presentation.viewmodels.FeedbackType // Add this import
 import javax.inject.Inject
 
 data class VowelLearningState(
@@ -25,10 +26,6 @@ data class VowelLearningState(
     val isLoading: Boolean = false,
     val error: String? = null
 )
-
-enum class FeedbackType {
-    SUCCESS, ENCOURAGEMENT, ERROR
-}
 
 @HiltViewModel
 class VowelLearningViewModel @Inject constructor(
