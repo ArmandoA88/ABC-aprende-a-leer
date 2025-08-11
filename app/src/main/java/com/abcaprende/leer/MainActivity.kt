@@ -193,6 +193,15 @@ fun ABCAprendeApp() {
             EstrellitaModeScreen(navController = navController)
         }
 
+        // Nuevo Nivel 6 - Refuerzo fonológico después de cada letra en Estrellita
+        composable("nivel6/{letra}") { backStackEntry ->
+            val letra = backStackEntry.arguments?.getString("letra")
+            com.abcaprende.leer.presentation.screens.Nivel6Screen(
+                navController = navController,
+                letra = letra
+            )
+        }
+
         composable("letter_activity/{letter}") {
             ComingSoonScreen(navController = navController, title = "Actividad de Letra")
         }

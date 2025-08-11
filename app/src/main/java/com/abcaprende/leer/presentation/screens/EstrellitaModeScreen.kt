@@ -144,8 +144,8 @@ fun EstrellitaModeScreen(navController: NavController) {
                         ttsService = ttsService,
                         onContinue = {
                             if (currentLetterIndex < letters.size - 1) {
-                                currentLetterIndex++
-                                currentStep = "introduction"
+                                // Al continuar, vamos a una pantalla de refuerzo (Nivel 6) en lugar de pasar directo a la siguiente letra
+                                navController.navigate("nivel6/${currentLetter.letter}")
                             } else {
                                 navController.popBackStack()
                             }
