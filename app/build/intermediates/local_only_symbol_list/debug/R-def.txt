@@ -25,6 +25,7 @@ color trace_color
 color voice_color
 color warning_orange
 color white
+drawable ic_a
 drawable ic_casa
 drawable ic_mama
 drawable ic_mesa

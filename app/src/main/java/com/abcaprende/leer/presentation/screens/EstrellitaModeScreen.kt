@@ -170,7 +170,7 @@ fun EstrellitaHeader(
     canGoNext: Boolean,
     onBack: () -> Unit
 ) {
-    Card(
+                Card(
         modifier = Modifier
             .fillMaxWidth()
             .padding(16.dp),
@@ -374,8 +374,7 @@ fun ActivityStep(
                     .uppercase()
                 val target = letter.letter.uppercase()
                 val isCorrect = normalized.startsWith(target)
-
-                    Card(
+                Card(
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {

@@ -202,6 +202,20 @@ fun ABCAprendeApp() {
             )
         }
 
+        // Estructura base para nuevos módulos
+        composable("nivel2") {
+            com.abcaprende.leer.presentation.screens.Nivel2Screen()
+        }
+        composable("nivel3") {
+            com.abcaprende.leer.presentation.screens.Nivel3Screen()
+        }
+        composable("nivel4") {
+            com.abcaprende.leer.presentation.screens.Nivel4Screen()
+        }
+        composable("nivel5") {
+            com.abcaprende.leer.presentation.screens.Nivel5Screen()
+        }
+
         composable("letter_activity/{letter}") {
             ComingSoonScreen(navController = navController, title = "Actividad de Letra")
         }
