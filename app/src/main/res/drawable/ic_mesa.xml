@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Superficie de la mesa -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M20,30 L80,30 L80,38 L20,38 Z" />
+    
+    <!-- Patas de la mesa -->
+    <path
+        android:fillColor="#654321"
+        android:pathData="M22,38 L26,38 L26,78 L22,78 Z" />
+    <path
+        android:fillColor="#654321"
+        android:pathData="M74,38 L78,38 L78,78 L74,78 Z" />
+    <path
+        android:fillColor="#654321"
+        android:pathData="M22,38 L26,38 L26,78 L22,78 Z" />
+    <path
+        android:fillColor="#654321"
+        android:pathData="M74,38 L78,38 L78,78 L74,78 Z" />
+    
+    <!-- Sombra -->
+    <path
+        android:fillColor="#00000020"
+        android:pathData="M20,85 Q50,90 80,85 Q50,80 20,85 Z" />
+</vector>

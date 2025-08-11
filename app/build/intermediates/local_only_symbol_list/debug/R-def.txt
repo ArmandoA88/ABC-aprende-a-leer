@@ -25,6 +25,10 @@ color trace_color
 color voice_color
 color warning_orange
 color white
+drawable ic_casa
+drawable ic_mama
+drawable ic_mesa
+drawable ic_sol
 drawable placeholder_image
 layout activity_main
 string accuracy_rate

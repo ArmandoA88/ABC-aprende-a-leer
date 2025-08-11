@@ -9,16 +9,44 @@ import javax.inject.Inject
 @HiltViewModel
 class SyllableConstructionViewModel @Inject constructor() : ViewModel() {
 
-    val availableSyllables = mutableStateListOf("MA", "ME", "MI", "MO", "MU")
-    val targetWords = mutableStateListOf("MAMA", "MESA", "MIMI")
-    private val validWords = setOf("MAMA", "MESA", "MIMI", "MIO", "MIA", "MOMIA") // Example valid words
+    val availableSyllables = mutableStateListOf<String>()
+    val targetWords = mutableStateListOf<String>()
+    private var validWords = setOf<String>()
 
     var currentWordIndex = mutableStateOf(0)
     var formedWord = mutableStateOf("")
     var feedbackMessage = mutableStateOf("")
+    var isCompleted = mutableStateOf(false)
 
     val currentTargetWord: String
         get() = if (currentWordIndex.value < targetWords.size) targetWords[currentWordIndex.value] else ""
+
+    fun initializeForLetter(syllables: List<String>, words: List<String>) {
+        availableSyllables.clear()
+        availableSyllables.addAll(syllables)
+        
+        targetWords.clear()
+        targetWords.addAll(words)
+        
+        // Crear palabras válidas basadas en las sílabas disponibles
+        validWords = generateValidWords(syllables) + words.toSet()
+        
+        resetActivity()
+    }
+
+    private fun generateValidWords(syllables: List<String>): Set<String> {
+        val validWordsSet = mutableSetOf<String>()
+        
+        // Generar combinaciones simples de 2 sílabas
+        for (i in syllables.indices) {
+            for (j in syllables.indices) {
+                val word = syllables[i] + syllables[j]
+                validWordsSet.add(word)
+            }
+        }
+        
+        return validWordsSet
+    }
 
     fun addSyllable(syllable: String) {
         formedWord.value += syllable
@@ -34,6 +62,7 @@ class SyllableConstructionViewModel @Inject constructor() : ViewModel() {
             currentWordIndex.value++
             if (currentWordIndex.value >= targetWords.size) {
                 feedbackMessage.value = "¡Has completado todas las palabras!"
+                isCompleted.value = true
             }
             true
         } else {
@@ -52,5 +81,10 @@ class SyllableConstructionViewModel @Inject constructor() : ViewModel() {
         currentWordIndex.value = 0
         formedWord.value = ""
         feedbackMessage.value = ""
+        isCompleted.value = false
+    }
+    
+    fun hasMoreWords(): Boolean {
+        return currentWordIndex.value < targetWords.size
     }
 }

@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    
+    <!-- Techo -->
+    <path
+        android:fillColor="#8B4513"
+        android:pathData="M50,15 L20,40 L80,40 Z" />
+    
+    <!-- Paredes -->
+    <path
+        android:fillColor="#FFE4B5"
+        android:pathData="M25,40 L75,40 L75,80 L25,80 Z" />
+    
+    <!-- Puerta -->
+    <path
+        android:fillColor="#654321"
+        android:pathData="M45,55 L55,55 L55,80 L45,80 Z" />
+    
+    <!-- Ventana -->
+    <path
+        android:fillColor="#87CEEB"
+        android:pathData="M30,45 L40,45 L40,55 L30,55 Z" />
+    
+    <!-- Marco de ventana -->
+    <path
+        android:strokeColor="#654321"
+        android:strokeWidth="1"
+        android:pathData="M30,50 L40,50" />
+    <path
+        android:strokeColor="#654321"
+        android:strokeWidth="1"
+        android:pathData="M35,45 L35,55" />
+</vector>
