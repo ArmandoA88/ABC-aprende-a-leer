@@ -123,7 +123,7 @@ class VowelLearningViewModel @Inject constructor(
     fun startVoiceRecognition() {
         if (_state.value.isListening) return
         
-        _state.value = _state.value.copy(isListening = true)
+        _state.value = _state.value.copy(isListening = true, error = null)
         
         viewModelScope.launch {
             try {
@@ -137,6 +137,19 @@ class VowelLearningViewModel @Inject constructor(
                         processVoiceResult(stars, message)
                     }
                 )
+                
+                // Timeout automático después de 15 segundos para dar MÁS tiempo
+                kotlinx.coroutines.delay(15000)
+                if (_state.value.isListening) {
+                    voiceService.stopListening()
+                    _state.value = _state.value.copy(
+                        isListening = false,
+                        showFeedback = true,
+                        feedbackMessage = "Tiempo agotado. Inténtalo de nuevo 🔄",
+                        feedbackType = FeedbackType.ENCOURAGEMENT
+                    )
+                }
+                
             } catch (e: Exception) {
                 _state.value = _state.value.copy(
                     isListening = false,
@@ -153,8 +166,8 @@ class VowelLearningViewModel @Inject constructor(
         val newAttempts = currentState.attempts + 1
         
         val (feedbackType, feedbackMessage) = when (stars) {
-            3 -> FeedbackType.SUCCESS to successMessages.random()
-            2 -> FeedbackType.SUCCESS to "¡Muy bien! Sigue practicando"
+            3 -> FeedbackType.SUCCESS to "¡PERFECTO! 🌟 Siguiente vocal..."
+            2 -> FeedbackType.SUCCESS to "¡MUY BIEN! 👏 Siguiente vocal..."
             1 -> FeedbackType.ENCOURAGEMENT to "¡Buen intento! Inténtalo otra vez"
             else -> FeedbackType.ENCOURAGEMENT to encouragementMessages.random()
         }
@@ -184,6 +197,16 @@ class VowelLearningViewModel @Inject constructor(
         // Guardar progreso si fue exitoso
         if (stars > 0) {
             saveProgress(currentState.currentVowel, newScore)
+        }
+        
+        // Avanzar automáticamente a la siguiente vocal si pronunció bien (2 o 3 estrellas)
+        if (stars >= 2) {
+            viewModelScope.launch {
+                kotlinx.coroutines.delay(2000) // Esperar 2 segundos para mostrar el feedback
+                dismissFeedback()
+                kotlinx.coroutines.delay(500) // Pequeña pausa
+                nextVowel()
+            }
         }
     }
 
@@ -227,6 +250,16 @@ class VowelLearningViewModel @Inject constructor(
 
     fun clearError() {
         _state.value = _state.value.copy(error = null)
+    }
+
+    fun stopVoiceRecognition() {
+        voiceService.stopListening()
+        _state.value = _state.value.copy(
+            isListening = false,
+            showFeedback = true,
+            feedbackMessage = "Reconocimiento detenido 🛑",
+            feedbackType = FeedbackType.ENCOURAGEMENT
+        )
     }
 
     fun stopAllAudio() {

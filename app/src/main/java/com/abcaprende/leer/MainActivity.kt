@@ -1,9 +1,14 @@
 package com.abcaprende.leer
 
+import android.Manifest
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -12,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
@@ -30,9 +36,32 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     
+    // Launcher para solicitar múltiples permisos
+    private val requestPermissionsLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) { permissions ->
+        val allGranted = permissions.values.all { it }
+        if (allGranted) {
+            Toast.makeText(this, "¡Permisos concedidos! La app funcionará correctamente.", Toast.LENGTH_LONG).show()
+        } else {
+            val deniedPermissions = permissions.filterValues { !it }.keys
+            val message = when {
+                deniedPermissions.contains(Manifest.permission.RECORD_AUDIO) -> 
+                    "El micrófono es necesario para el reconocimiento de voz. Puedes habilitarlo en Configuración."
+                deniedPermissions.contains(Manifest.permission.POST_NOTIFICATIONS) -> 
+                    "Las notificaciones ayudan a recordar las lecciones. Puedes habilitarlas en Configuración."
+                else -> "Algunos permisos fueron denegados. La app puede no funcionar completamente."
+            }
+            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+        }
+    }
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        
+        // Solicitar permisos automáticamente al iniciar la app
+        requestNecessaryPermissions()
         
         setContent {
             ABCAprendeTheme {
@@ -43,6 +72,67 @@ class MainActivity : ComponentActivity() {
                     ABCAprendeApp()
                 }
             }
+        }
+    }
+    
+    private fun requestNecessaryPermissions() {
+        val permissionsToRequest = mutableListOf<String>()
+        
+        // Verificar permiso de micrófono (CRÍTICO para reconocimiento de voz)
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) 
+            != PackageManager.PERMISSION_GRANTED) {
+            permissionsToRequest.add(Manifest.permission.RECORD_AUDIO)
+        }
+        
+        // Verificar permiso de notificaciones (solo para Android 13+)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) 
+                != PackageManager.PERMISSION_GRANTED) {
+                permissionsToRequest.add(Manifest.permission.POST_NOTIFICATIONS)
+            }
+        }
+        
+        // Solicitar permisos si es necesario
+        if (permissionsToRequest.isNotEmpty()) {
+            // Mostrar mensaje explicativo antes de solicitar permisos
+            Toast.makeText(
+                this, 
+                "ABC Aprende necesita algunos permisos para funcionar correctamente. ¡Por favor acepta!", 
+                Toast.LENGTH_LONG
+            ).show()
+            
+            // Solicitar permisos después de un pequeño delay para que el usuario lea el mensaje
+            android.os.Handler(android.os.Looper.getMainLooper()).postDelayed({
+                requestPermissionsLauncher.launch(permissionsToRequest.toTypedArray())
+            }, 2000) // 2 segundos de delay
+        } else {
+            // Todos los permisos ya están concedidos
+            Toast.makeText(this, "¡Todos los permisos están listos! 🎉", Toast.LENGTH_SHORT).show()
+        }
+    }
+    
+    // Método para verificar si todos los permisos críticos están concedidos
+    private fun hasAllCriticalPermissions(): Boolean {
+        val audioPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED
+        
+        val notificationPermission = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED
+        } else {
+            true // No se requiere en versiones anteriores
+        }
+        
+        return audioPermission && notificationPermission
+    }
+    
+    override fun onResume() {
+        super.onResume()
+        // Verificar permisos cada vez que la app vuelve al primer plano
+        if (!hasAllCriticalPermissions()) {
+            Toast.makeText(
+                this, 
+                "Algunos permisos están deshabilitados. Ve a Configuración para habilitarlos.", 
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 }

@@ -51,7 +51,22 @@ class VoiceRecognitionService @Inject constructor(
             putExtra(RecognizerIntent.EXTRA_ONLY_RETURN_LANGUAGE_PREFERENCE, false)
             putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, context.packageName)
             putExtra(RecognizerIntent.EXTRA_PARTIAL_RESULTS, true)
-            putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 3)
+            putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 10)
+            
+            // Configuraciones MUY AGRESIVAS para grabación larga
+            putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, 15000L) // 15 segundos
+            putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS, 12000L) // 12 segundos
+            putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS, 2000L) // 2 segundos mínimo
+            
+            // Configuraciones adicionales para forzar grabación larga
+            putExtra("android.speech.extra.DICTATION_MODE", true)
+            putExtra("android.speech.extra.GET_AUDIO_FORMAT", "audio/AMR")
+            putExtra("android.speech.extra.GET_AUDIO", true)
+            putExtra(RecognizerIntent.EXTRA_PREFER_OFFLINE, false)
+            
+            // Configuraciones experimentales
+            putExtra("com.google.android.voicesearch.EXTRA_FORCE_RECOGNITION", true)
+            putExtra("com.google.android.voicesearch.EXTRA_ENABLE_BIASING", false)
         }
         
         try {
@@ -133,30 +148,64 @@ class VoiceRecognitionService @Inject constructor(
     }
     
     private fun evaluateResult(spokenText: String, confidence: Float) {
-        val similarity = calculateSimilarity(spokenText, targetWord)
+        val similarity = calculateVowelSimilarity(spokenText, targetWord)
         val stars: Int
         val message: String
         
+        // Evaluación específica para vocales
         when {
-            similarity >= 0.8 || confidence >= 0.8 -> {
+            similarity >= 0.9 || confidence >= 0.85 -> {
                 stars = 3
-                message = "¡Perfecto! Dijiste: $spokenText"
+                message = "¡PERFECTO! 🌟"
+                // Detener automáticamente cuando es perfecto
+                stopListening()
             }
-            similarity >= 0.6 || confidence >= 0.6 -> {
+            similarity >= 0.7 || confidence >= 0.7 -> {
                 stars = 2
-                message = "¡Muy bien! Dijiste: $spokenText"
+                message = "¡MUY BIEN! 👏"
+                // También detener cuando es muy bueno
+                stopListening()
             }
-            similarity >= 0.4 || confidence >= 0.4 -> {
+            similarity >= 0.5 || confidence >= 0.5 -> {
                 stars = 1
-                message = "¡Buen intento! Dijiste: $spokenText"
+                message = "¡BIEN! Inténtalo otra vez 💪"
             }
             else -> {
                 stars = 0
-                message = "Inténtalo de nuevo. Dijiste: $spokenText"
+                message = "Inténtalo de nuevo 🔄"
             }
         }
         
         currentCallback?.invoke(stars, message)
+    }
+    
+    private fun calculateVowelSimilarity(spokenText: String, targetVowel: String): Float {
+        val spoken = spokenText.lowercase().trim()
+        val target = targetVowel.lowercase().trim()
+        
+        // Verificación directa para vocales
+        if (spoken == target) return 1.0f
+        
+        // Verificar si la vocal está contenida en lo que se dijo
+        if (spoken.contains(target)) return 0.8f
+        
+        // Verificar sonidos similares para cada vocal
+        val vowelSimilarities = mapOf(
+            "a" to listOf("ah", "aa", "ha"),
+            "e" to listOf("eh", "ee", "he"),
+            "i" to listOf("ii", "hi", "ee"),
+            "o" to listOf("oh", "oo", "ho"),
+            "u" to listOf("uu", "hu", "oo")
+        )
+        
+        vowelSimilarities[target]?.forEach { similar ->
+            if (spoken.contains(similar) || similar.contains(spoken)) {
+                return 0.7f
+            }
+        }
+        
+        // Usar algoritmo de distancia como respaldo
+        return calculateSimilarity(spoken, target)
     }
     
     private fun calculateSimilarity(str1: String, str2: String): Float {

@@ -33,6 +33,9 @@ import com.abcaprende.leer.ui.theme.*
 import android.widget.Toast // Import Toast
 import androidx.compose.foundation.gestures.detectTapGestures // Import detectTapGestures
 import androidx.compose.ui.input.pointer.pointerInput // Import pointerInput
+import kotlinx.coroutines.launch // Import launch
+import kotlinx.coroutines.delay // Import delay
+import androidx.compose.runtime.rememberCoroutineScope // Import rememberCoroutineScope
 
 @Composable
 fun VowelLearningScreen(
@@ -121,6 +124,7 @@ fun VowelLearningScreen(
                 isListening = state.isListening,
                 onListen = { viewModel.playVowelSound() },
                 onRepeat = { viewModel.startVoiceRecognition() },
+                onStop = { viewModel.stopVoiceRecognition() },
                 onNext = { viewModel.nextVowel() }
             )
             
@@ -741,13 +745,8 @@ private fun BigVowelDisplay(
                         )
                     )
                 } else if (isListening) {
-                    Text(
-                        text = "🎤 Habla",
-                        style = MaterialTheme.typography.headlineMedium.copy(
-                            color = VoiceColor,
-                            fontWeight = FontWeight.Bold
-                        )
-                    )
+                    // Indicador de grabación MUY OBVIO
+                    RecordingIndicator(vowel = vowel)
                 } else {
                     Text(
                         text = "👆 Toca aquí",
@@ -768,6 +767,7 @@ private fun SimpleBigButtons(
     isListening: Boolean,
     onListen: () -> Unit,
     onRepeat: () -> Unit,
+    onStop: () -> Unit,
     onNext: () -> Unit
 ) {
     Column(
@@ -800,25 +800,29 @@ private fun SimpleBigButtons(
             )
         }
         
-        // Botón REPETIR - MÁS GRANDE
+        // Botón REPETIR/DETENER - MÁS GRANDE
         Button(
-            onClick = onRepeat,
+            onClick = if (isListening) {
+                onStop
+            } else {
+                onRepeat
+            },
             modifier = Modifier
                 .fillMaxWidth()
                 .height(80.dp),
             colors = ButtonDefaults.buttonColors(
-                containerColor = VoiceColor
+                containerColor = if (isListening) ErrorRed else VoiceColor
             ),
             shape = RoundedCornerShape(40.dp),
-            enabled = !isPlaying && !isListening
+            enabled = !isPlaying
         ) {
             Text(
-                text = "🎤",
+                text = if (isListening) "🛑" else "🎤",
                 style = MaterialTheme.typography.displaySmall
             )
             Spacer(modifier = Modifier.width(16.dp))
             Text(
-                text = if (isListening) "OYE..." else "DECIR",
+                text = if (isListening) "DETENER" else "DECIR",
                 style = MaterialTheme.typography.headlineMedium.copy(
                     fontWeight = FontWeight.Bold,
                     color = Color.White
@@ -850,6 +854,156 @@ private fun SimpleBigButtons(
                 )
             )
         }
+    }
+}
+
+// Componente de indicador de grabación MUY OBVIO con contador
+@Composable
+private fun RecordingIndicator(vowel: String) {
+    var pulseScale by remember { mutableStateOf(1f) }
+    var microphoneRotation by remember { mutableStateOf(0f) }
+    var timeLeft by remember { mutableStateOf(15) }
+    
+    val scale by animateFloatAsState(
+        targetValue = pulseScale,
+        animationSpec = tween(500),
+        label = "pulseScale"
+    )
+    
+    val rotation by animateFloatAsState(
+        targetValue = microphoneRotation,
+        animationSpec = tween(300),
+        label = "microphoneRotation"
+    )
+    
+    // Contador de tiempo y animaciones
+    LaunchedEffect(Unit) {
+        // Iniciar contador de tiempo
+        val countdownJob = launch {
+            repeat(15) {
+                delay(1000)
+                timeLeft--
+            }
+        }
+        
+        // Animaciones continuas
+        while (timeLeft > 0) {
+            pulseScale = 1.4f
+            microphoneRotation = 15f
+            delay(400)
+            pulseScale = 1f
+            microphoneRotation = -15f
+            delay(400)
+        }
+        
+        countdownJob.cancel()
+    }
+    
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        // Contador de tiempo MUY VISIBLE
+        Text(
+            text = "⏰ $timeLeft",
+            style = MaterialTheme.typography.displayMedium.copy(
+                color = if (timeLeft <= 3) Color.Red else Color(0xFF2196F3),
+                fontWeight = FontWeight.Bold
+            ),
+            modifier = Modifier.scale(if (timeLeft <= 3) 1.3f else 1f)
+        )
+        
+        // Círculo rojo pulsante de fondo MÁS GRANDE
+        Box(
+            modifier = Modifier
+                .size(120.dp)
+                .scale(scale)
+                .background(
+                    color = Color.Red.copy(alpha = 0.4f),
+                    shape = CircleShape
+                ),
+            contentAlignment = Alignment.Center
+        ) {
+            // Micrófono animado MÁS GRANDE
+            Text(
+                text = "🎤",
+                style = MaterialTheme.typography.displayLarge.copy(
+                    fontSize = 80.sp
+                ),
+                modifier = Modifier
+                    .graphicsLayer {
+                        rotationZ = rotation
+                    }
+            )
+        }
+        
+        // Texto pulsante "GRABANDO" MÁS GRANDE
+        Text(
+            text = "🔴 GRABANDO",
+            style = MaterialTheme.typography.displaySmall.copy(
+                color = Color.Red,
+                fontWeight = FontWeight.Bold
+            ),
+            modifier = Modifier.scale(scale)
+        )
+        
+        // Instrucción MUY CLARA
+        Text(
+            text = "HABLA AHORA",
+            style = MaterialTheme.typography.headlineLarge.copy(
+                color = Color.White,
+                fontWeight = FontWeight.Bold
+            ),
+            modifier = Modifier
+                .background(
+                    color = Color.Red.copy(alpha = 0.8f),
+                    shape = RoundedCornerShape(16.dp)
+                )
+                .padding(horizontal = 24.dp, vertical = 8.dp)
+        )
+        
+        // Instrucción de la vocal
+        Text(
+            text = "Di: \"${vowel}\"",
+            style = MaterialTheme.typography.headlineMedium.copy(
+                color = getVowelColor(vowel),
+                fontWeight = FontWeight.Bold
+            )
+        )
+        
+        // Ondas de sonido animadas MÁS GRANDES
+        Row(
+            horizontalArrangement = Arrangement.spacedBy(6.dp)
+        ) {
+            repeat(7) { index ->
+                Box(
+                    modifier = Modifier
+                        .width(6.dp)
+                        .height(30.dp + (index * 8).dp)
+                        .scale(if (scale > 1f) 1.3f else 0.7f)
+                        .background(
+                            color = Color.Red.copy(alpha = 0.8f),
+                            shape = RoundedCornerShape(3.dp)
+                        )
+                )
+            }
+        }
+        
+        // Mensaje de ánimo
+        Text(
+            text = "¡LA APP TE ESTÁ ESCUCHANDO! 👂",
+            style = MaterialTheme.typography.titleLarge.copy(
+                color = Color(0xFF4CAF50),
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Center
+            ),
+            modifier = Modifier
+                .background(
+                    color = Color.White.copy(alpha = 0.9f),
+                    shape = RoundedCornerShape(12.dp)
+                )
+                .padding(16.dp)
+        )
     }
 }
 
