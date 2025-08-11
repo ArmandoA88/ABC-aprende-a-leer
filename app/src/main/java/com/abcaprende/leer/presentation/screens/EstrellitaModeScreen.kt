@@ -39,14 +39,32 @@ fun EstrellitaModeScreen(navController: NavController) {
     // Lista de letras del programa Estrellita
     val letters = remember {
         listOf(
-            EstrellitaLetter("M", "M de mamá", listOf("MAMÁ", "MESA", "MANO")),
-            EstrellitaLetter("P", "P de papá", listOf("PAPÁ", "PATO", "PELOTA")),
-            EstrellitaLetter("S", "S de sol", listOf("SOL", "SAPO", "SILLA")),
-            EstrellitaLetter("L", "L de luna", listOf("LUNA", "LOBO", "LIMÓN")),
-            EstrellitaLetter("T", "T de tomate", listOf("TOMATE", "TIGRE", "TAZA")),
-            EstrellitaLetter("N", "N de nube", listOf("NUBE", "NIÑO", "NARIZ")),
-            EstrellitaLetter("D", "D de dado", listOf("DADO", "DEDO", "DULCE")),
-            EstrellitaLetter("R", "R de ratón", listOf("RATÓN", "ROSA", "RANA"))
+            EstrellitaLetter("A", "A de avión", listOf("AVIÓN", "ÁRBOL", "ARCO", "BOLA", "CAMA")),
+            EstrellitaLetter("B", "B de barco", listOf("BARCO", "BOLA", "BESO", "ÁRBOL", "DADO")),
+            EstrellitaLetter("C", "C de casa", listOf("CASA", "CAMA", "CARRO", "BOLA", "FUEGO")),
+            EstrellitaLetter("D", "D de dado", listOf("DADO", "DEDO", "DULCE", "GATO", "LUNA")),
+            EstrellitaLetter("E", "E de elefante", listOf("ELEFANTE", "ESPEJO", "ENERO", "BOLA", "MESA")),
+            EstrellitaLetter("F", "F de fuego", listOf("FUEGO", "FLOTA", "FRESA", "CASA", "PERRO")),
+            EstrellitaLetter("G", "G de gato", listOf("GATO", "GOMA", "GUITARRA", "ÁRBOL", "SOL")),
+            EstrellitaLetter("H", "H de helado", listOf("HELADO", "HUESO", "HABANA", "CAMA", "LUNA")),
+            EstrellitaLetter("I", "I de isla", listOf("ISLA", "IGLESIA", "INVERTIR", "BOLA", "PERRO")),
+            EstrellitaLetter("J", "J de jirafa", listOf("JIRAFA", "JUEGO", "JABÓN", "CASA", "FUEGO")),
+            EstrellitaLetter("K", "K de koala", listOf("KOALA", "KILO", "KARATE", "ÁRBOL", "LUNA")),
+            EstrellitaLetter("L", "L de luna", listOf("LUNA", "LOBO", "LIMÓN", "BOLA", "PERRO")),
+            EstrellitaLetter("M", "M de mamá", listOf("MAMÁ", "MESA", "MANO", "SOL", "GATO")),
+            EstrellitaLetter("N", "N de nube", listOf("NUBE", "NIÑO", "NARIZ", "CASA", "FUEGO")),
+            EstrellitaLetter("O", "O de oso", listOf("OSO", "OJO", "OLIVO", "BOLA", "LUNA")),
+            EstrellitaLetter("P", "P de papá", listOf("PAPÁ", "PATO", "PELOTA", "ÁRBOL", "GATO")),
+            EstrellitaLetter("Q", "Q de queso", listOf("QUESO", "QUÍMICA", "QUAD", "CASA", "SOL")),
+            EstrellitaLetter("R", "R de ratón", listOf("RATÓN", "ROSA", "RANA", "BOLA", "FUEGO")),
+            EstrellitaLetter("S", "S de sol", listOf("SOL", "SAPO", "SILLA", "ÁRBOL", "LUNA")),
+            EstrellitaLetter("T", "T de tomate", listOf("TOMATE", "TIGRE", "TAZA", "CASA", "PERRO")),
+            EstrellitaLetter("U", "U de uva", listOf("UVA", "UNICO", "URBANO", "BOLA", "GATO")),
+            EstrellitaLetter("V", "V de vaso", listOf("VASO", "VACA", "VIAJE", "ÁRBOL", "LUNA")),
+            EstrellitaLetter("W", "W de wáter", listOf("WÁTER", "WAFLE", "WIND", "CASA", "SOL")),
+            EstrellitaLetter("X", "X de xilófono", listOf("XILÓFONO", "XEROX", "XENÓN", "BOLA", "GATO")),
+            EstrellitaLetter("Y", "Y de yate", listOf("YATE", "YOGA", "YOGUR", "ÁRBOL", "LUNA")),
+            EstrellitaLetter("Z", "Z de zapato", listOf("ZAPATO", "ZORRO", "ZUMO", "CASA", "PERRO"))
         )
     }
     
@@ -346,27 +364,41 @@ fun ActivityStep(
         Column(
             verticalArrangement = Arrangement.spacedBy(16.dp)
         ) {
-            letter.words.forEach { word ->
+            // Barajar aleatoriamente las palabras para cada letra
+            val shuffledWords = remember(letter) { letter.words.shuffled() }
+            shuffledWords.forEach { word ->
                 var isClicked by remember { mutableStateOf(false) }
-                
-                Card(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clickable {
-                            if (!isClicked) {
-                                ttsService.speak(word)
-                                isClicked = true
-                                wordsFound++
-                                if (wordsFound >= requiredWords) {
-                                    ttsService.speak("¡Excelente! Has encontrado todas las palabras.")
-                                    onComplete()
+                // Normalizar la palabra para ignorar acentos y determinar si es correcta
+                val normalized = java.text.Normalizer.normalize(word, java.text.Normalizer.Form.NFD)
+                    .replace("\\p{Mn}".toRegex(), "")
+                    .uppercase()
+                val target = letter.letter.uppercase()
+                val isCorrect = normalized.startsWith(target)
+
+                    Card(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .clickable {
+                                if (!isClicked) {
+                                    ttsService.speak(word)
+                                    isClicked = true
+                                    if (isCorrect) {
+                                        wordsFound++
+                                        if (wordsFound >= requiredWords) {
+                                            ttsService.speak("¡Excelente! Has encontrado todas las palabras.")
+                                            onComplete()
+                                        }
+                                    }
                                 }
+                            },
+                        colors = CardDefaults.cardColors(
+                            containerColor = if (isClicked && isCorrect) {
+                                Color.Green.copy(alpha = 0.8f)
+                            } else {
+                                Color(0xFF673AB7)
                             }
-                        },
-                    colors = CardDefaults.cardColors(
-                        containerColor = if (isClicked) Color.Green.copy(alpha = 0.8f) else Color(0xFF673AB7)
-                    )
-                ) {
+                        )
+                    ) {
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
