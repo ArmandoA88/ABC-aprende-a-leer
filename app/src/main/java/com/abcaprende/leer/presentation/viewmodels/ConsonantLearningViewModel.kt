@@ -60,7 +60,8 @@ class ConsonantLearningViewModel @Inject constructor(
     fun startVoiceRecognition() {
         viewModelScope.launch {
             _state.update { it.copy(isListening = true, error = null) }
-            voiceService.startListening(_state.value.currentConsonant) { stars, message ->
+            val consonant = _state.value.currentConsonant.lowercase()
+            voiceService.startListening(consonant) { stars, message ->
                 _state.update { it.copy(isListening = false) }
                 processVoiceResult(stars, message)
             }

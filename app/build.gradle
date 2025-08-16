@@ -27,6 +27,15 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    if (output.outputFileName.endsWith(".apk")) {
+                        output.outputFileName = "AprendeAleer.apk"
+                    }
+                }
+            }
+        }
     }
 
     // Configure Java toolchain to ensure consistent JDK usage

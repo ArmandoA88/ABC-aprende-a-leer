@@ -148,34 +148,30 @@ class VoiceRecognitionService @Inject constructor(
     }
     
     private fun evaluateResult(spokenText: String, confidence: Float) {
-        val similarity = calculateVowelSimilarity(spokenText, targetWord)
         val stars: Int
         val message: String
-        
-        // Evaluación específica para vocales
-        when {
-            similarity >= 0.9 || confidence >= 0.85 -> {
-                stars = 3
-                message = "¡PERFECTO! 🌟"
-                // Detener automáticamente cuando es perfecto
-                stopListening()
-            }
-            similarity >= 0.7 || confidence >= 0.7 -> {
-                stars = 2
-                message = "¡MUY BIEN! 👏"
-                // También detener cuando es muy bueno
-                stopListening()
-            }
-            similarity >= 0.5 || confidence >= 0.5 -> {
-                stars = 1
-                message = "¡BIEN! Inténtalo otra vez 💪"
-            }
-            else -> {
-                stars = 0
-                message = "Inténtalo de nuevo 🔄"
-            }
+
+        val cleanSpoken = spokenText.lowercase().trim()
+
+        // Usar similitud más flexible para mejorar la detección
+        val similarity = calculateSimilarity(cleanSpoken, targetWord)
+
+        if (cleanSpoken == targetWord || similarity >= 0.85 || confidence >= 0.8) {
+            stars = 3
+            message = "¡PERFECTO! 🌟"
+            stopListening()
+        } else if (cleanSpoken.contains(targetWord) || similarity >= 0.7 || confidence >= 0.65) {
+            stars = 2
+            message = "¡MUY BIEN! 👏"
+            stopListening()
+        } else if (similarity >= 0.5 || confidence >= 0.5) {
+            stars = 1
+            message = "¡BIEN! Inténtalo otra vez 💪"
+        } else {
+            stars = 0
+            message = "Inténtalo de nuevo 🔄"
         }
-        
+
         currentCallback?.invoke(stars, message)
     }
     

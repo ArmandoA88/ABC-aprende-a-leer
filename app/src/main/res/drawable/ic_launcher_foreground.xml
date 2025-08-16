@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Fondo circular -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M54,0a54,54 0 1,0 0,108a54,54 0 1,0 0,-108z"/>
+    <!-- Letra A estilizada para 'Aprende a Leer' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,20 L70,80 L38,80 Z M54,35 L47,60 L61,60 Z"/>
+    <!-- Libro abierto debajo de la letra -->
+    <path
+        android:fillColor="#FFC107"
+        android:pathData="M34,75 L54,65 L74,75 L54,85 Z"/>
+</vector>
